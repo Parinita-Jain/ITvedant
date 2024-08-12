@@ -1,0 +1,6 @@
+EXCEL :  Reports and dashboard 
+Reports are designed for in board   they are ideal for detail financial analysis monthly performance revenues, data exploration and discovery, It has multiple pAGES WHILE DASHBOARD ARE ideal for executive overviews, real time monitoring of key metrics and also provide quick snapshots for meeting and presentation.
+
+
+
+ 

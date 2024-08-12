@@ -1,0 +1,5 @@
+Case Study – Football
+Create a report to show the comparison number of matches conducted on each date and list all the match table. 
+Create a report to show the teams stats and when a team is select another table should reflect the matches played by that team. 
+This result should also include a tooltip to show name of the team and matches that teams has played.
+ Transform the data in proper format and create the required measures to generate the report.

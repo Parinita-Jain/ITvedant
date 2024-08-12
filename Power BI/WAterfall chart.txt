@@ -1,0 +1,22 @@
+Waterfall chart is used to show how a initial value is effected by a series of intermediate positive or negative values. It helps to 
+visualize the sequential and cumulative effect of introduced values For Example in Finanacial analysis it is used to show how net income ,taxes ,expenses,revenue etc
+
+
+In sales analysis it can be used to illustratre the contribution of different products and regions for different sales
+
+Ribbon Chart is used to visualize data over time  showing how different categories rank across different time Periods. It highlights rank
+and distribution of data over time 
+
+Area Chart is similar to line chart but the area between line and the axis is filled with color or shading. The Area chart is used to represent cumulative data 
+over time
+
+1 To show the cumulative effect of sequentially introduce posyive or negative values use waterfall chart
+
+2 To visualize the rank and distribution of different categories overtime use ribbon chart
+
+3 To Visualize the trend of one or more variable overtime use Waterfall Chart
+
+
+Funnel chart represent the flow of linear process on sequential stages
+
+Tree Diagram 

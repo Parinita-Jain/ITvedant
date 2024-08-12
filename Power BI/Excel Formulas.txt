@@ -1,0 +1,155 @@
+Here's an extensive list of Excel functions organized by category:
+
+Arithmetic Functions
+SUM: Adds all the numbers in a range of cells.
+excel
+
+=SUM(A1:A10)
+SUMIF: Adds the cells specified by a given condition or criteria.
+=SUMIF(A1:A10, ">5")
+
+SUMIFS: Adds the cells specified by a given set of conditions or criteria.
+=SUMIFS(A1:A10, B1:B10, ">5", C1:C10, "<10")
+
+AVERAGE: Calculates the average of the numbers in a range of cells.
+=AVERAGE(B1:B10)
+
+AVERAGEIF: Calculates the average of the cells specified by a given condition or criteria.
+=AVERAGEIF(A1:A10, ">5")
+
+AVERAGEIFS: Calculates the average of the cells specified by a given set of conditions or criteria.
+=AVERAGEIFS(A1:A10, B1:B10, ">5", C1:C10, "<10")
+
+COUNT: Counts the number of cells that contain numbers.
+=COUNT(C1:C10)
+
+COUNTA: Counts the number of non-empty cells.
+=COUNTA(D1:D10)
+
+COUNTIF: Counts the number of cells that meet a specific condition.
+=COUNTIF(A1:A10, ">5")
+
+COUNTIFS: Counts the number of cells that meet multiple criteria.
+=COUNTIFS(A1:A10, ">5", B1:B10, "<10")
+
+Logical Functions----------
+
+IF: Returns one value if a condition is true and another value if it's false.
+=IF(A1 > 10, "High", "Low")
+
+IFERROR: Returns a value you specify if a formula evaluates to an error; otherwise, returns the result of the formula.
+=IFERROR(A1/B1, "Error")
+
+AND: Returns TRUE if all arguments are TRUE.
+=AND(A1 > 5, B1 < 10)
+
+OR: Returns TRUE if any argument is TRUE.
+=OR(A1 > 5, B1 < 10)
+
+NOT: Reverses the logical value of its argument.
+=NOT(A1 > 5)
+
+IFNA: Returns the value you specify if the expression resolves to #N/A, otherwise returns the result of the expression.
+=IFNA(VLOOKUP(A1, B1:C10, 2, FALSE), "Not Found")
+
+Text Functions------------------------
+
+CONCATENATE (or CONCAT): Joins several text strings into one string.
+=CONCATENATE("Hello", " ", "World")
+
+TEXTJOIN: Joins several text strings into one string with a delimiter.
+=TEXTJOIN(", ", TRUE, A1, B1, C1)
+
+LEFT: Returns the leftmost characters from a text string.
+=LEFT(A1, 5)
+
+RIGHT: Returns the rightmost characters from a text string.
+=RIGHT(A1, 5)
+
+MID: Returns a specific number of characters from a text string, starting at the position you specify.
+=MID(A1, 2, 5)
+
+LEN: Returns the number of characters in a text string.
+=LEN(A1)
+
+TRIM: Removes extra spaces from a text string.
+=TRIM(A1)
+
+UPPER: Converts a text string to all uppercase letters.
+=UPPER(A1)
+
+LOWER: Converts a text string to all lowercase letters.
+=LOWER(A1)
+
+PROPER: Converts a text string to proper case; the first letter in each word to uppercase.
+=PROPER(A1)
+
+SUBSTITUTE: Substitutes new text for old text in a text string.
+=SUBSTITUTE(A1, "old", "new")
+
+FIND: Returns the starting position of one text string within another text string. Case-sensitive.
+=FIND("find", A1)
+
+SEARCH: Returns the starting position of one text string within another text string. Not case-sensitive.
+=SEARCH("search", A1)
+
+Lookup and Reference Functions-------------
+VLOOKUP: Searches for a value in the first column of a table and returns a value in the same row from a specified column.
+=VLOOKUP(A1, B1:D10, 2, FALSE)
+
+HLOOKUP: Searches for a value in the first row of a table and returns a value in the same column from a specified row.
+=HLOOKUP(A1, A1:E10, 2, FALSE)
+
+INDEX: Returns the value of a cell in a specified row and column of a range.
+=INDEX(A1:C10, 2, 3)
+
+MATCH: Searches for a specified value in a range and returns the relative position of that item.
+=MATCH(A1, B1:B10, 0)
+
+LOOKUP: Searches for a value either from a one-row or one-column range and returns a value from the same position in another one-row or one-column range.
+=LOOKUP(A1, B1:B10, C1:C10)
+
+CHOOSE: Returns a value from a list of values based on a specified position.
+=CHOOSE(2, "Apple", "Banana", "Cherry")
+
+OFFSET: Returns a reference to a range that is a specified number of rows and columns from a cell or range of cells.
+=OFFSET(A1, 2, 3)
+
+Date and Time Functions--------
+TODAY: Returns the current date.
+=TODAY()
+
+NOW: Returns the current date and time.
+=NOW()
+
+DATE: Returns the date value for a given year, month, and day.
+=DATE(2024, 6, 27)
+
+DATEDIF: Calculates the difference between two dates.
+=DATEDIF(A1, B1, "D")  # "D" for days, "M" for months, "Y" for years
+
+YEAR: Extracts the year from a date.
+=YEAR(A1)
+
+MONTH: Extracts the month from a date.
+=MONTH(A1)
+
+DAY: Extracts the day from a date.
+=DAY(A1)
+
+NETWORKDAYS: Returns the number of working days between two dates.
+=NETWORKDAYS(A1, B1)
+
+Statistical Functions --------------
+
+STDEV.S: Calculates the standard deviation of a sample.
+=STDEV.S(A1:A10)
+
+STDEV.P: Calculates the standard deviation of a population.
+=STDEV.P(A1:A10)
+
+VAR.S: Calculates the variance of a sample.
+=VAR.S(A1:A10)
+
+VAR.P: Calculates the variance of a population.
+=VAR.P(A1

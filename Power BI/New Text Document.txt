@@ -1,0 +1,7 @@
+Cleaning and transforming data using transform data option query editor allows us to clean and transform data like merging, splitting, renaming, changing the data type of columns
+changing table name, removing null values, removing duplicate values and many more. In the applied steps we can see that power BI has already performed some 
+data manipulation steps 
+
+
+
+When removing nulls from the given data it is said as data imputation
