@@ -1,0 +1,2 @@
+SumX_Total_Price = SUMX(Sales,Sales[Price]*Sales[Quantity])
+
