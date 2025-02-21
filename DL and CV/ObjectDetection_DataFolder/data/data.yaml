@@ -1,0 +1,8 @@
+path: ../data
+train: ../data/train/images
+test: ../data/test/images
+val: ../data/valid/images
+
+nc: 2
+names: ["dog","cat"]
+
