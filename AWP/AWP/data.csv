@@ -1,0 +1,251 @@
+year,match_id,team,runs_scored,players,wickets_taken
+2017,755,Delhi Capitals,236,"Player_2, Player_22, Player_85, Player_58, Player_66, Player_45, Player_56, Player_97, Player_39, Player_94, Player_89",6
+2015,268,Gujarat Titans,61,"Player_68, Player_41, Player_77, Player_78, Player_58, Player_3, Player_39, Player_11, Player_16, Player_69, Player_27",8
+2009,965,Delhi Capitals,69,"Player_17, Player_47, Player_99, Player_40, Player_59, Player_6, Player_50, Player_87, Player_67, Player_75, Player_11",5
+2014,488,Gujarat Titans,96,"Player_93, Player_60, Player_41, Player_61, Player_22, Player_55, Player_94, Player_28, Player_70, Player_16, Player_52",2
+2023,439,Kolkata Knight Riders,244,"Player_7, Player_9, Player_25, Player_42, Player_43, Player_78, Player_65, Player_74, Player_35, Player_81, Player_8",0
+2021,703,Kolkata Knight Riders,173,"Player_91, Player_34, Player_40, Player_90, Player_41, Player_51, Player_3, Player_23, Player_6, Player_21, Player_39",0
+2015,850,Royal Challengers Bangalore,76,"Player_58, Player_73, Player_17, Player_53, Player_68, Player_89, Player_75, Player_28, Player_20, Player_45, Player_87",8
+2015,789,Gujarat Titans,182,"Player_17, Player_9, Player_85, Player_1, Player_3, Player_38, Player_42, Player_52, Player_74, Player_79, Player_26",5
+2013,153,Royal Challengers Bangalore,142,"Player_19, Player_63, Player_61, Player_2, Player_8, Player_72, Player_77, Player_7, Player_38, Player_34, Player_75",3
+2016,955,Delhi Capitals,194,"Player_51, Player_40, Player_73, Player_12, Player_26, Player_2, Player_34, Player_27, Player_90, Player_15, Player_8",2
+2016,48,Royal Challengers Bangalore,135,"Player_95, Player_35, Player_45, Player_82, Player_93, Player_24, Player_4, Player_32, Player_72, Player_19, Player_97",10
+2012,353,Delhi Capitals,231,"Player_44, Player_72, Player_78, Player_22, Player_38, Player_29, Player_56, Player_74, Player_26, Player_86, Player_61",5
+2016,789,Sunrisers Hyderabad,165,"Player_26, Player_48, Player_74, Player_86, Player_97, Player_50, Player_33, Player_10, Player_91, Player_59, Player_56",5
+2014,626,Mumbai Indians,174,"Player_84, Player_8, Player_85, Player_36, Player_24, Player_76, Player_99, Player_22, Player_20, Player_90, Player_63",7
+2012,440,Rajasthan Royals,129,"Player_31, Player_95, Player_63, Player_32, Player_26, Player_74, Player_92, Player_39, Player_8, Player_54, Player_40",3
+2014,155,Lucknow Super Giants,142,"Player_64, Player_97, Player_31, Player_26, Player_44, Player_90, Player_16, Player_82, Player_71, Player_35, Player_36",1
+2017,991,Delhi Capitals,192,"Player_68, Player_77, Player_11, Player_54, Player_63, Player_22, Player_45, Player_23, Player_80, Player_78, Player_13",5
+2018,619,Sunrisers Hyderabad,246,"Player_65, Player_84, Player_85, Player_37, Player_9, Player_17, Player_45, Player_95, Player_38, Player_60, Player_43",7
+2019,173,Rajasthan Royals,165,"Player_45, Player_44, Player_46, Player_30, Player_83, Player_89, Player_67, Player_62, Player_70, Player_18, Player_47",8
+2011,560,Chennai Super Kings,93,"Player_9, Player_80, Player_17, Player_95, Player_23, Player_14, Player_45, Player_97, Player_79, Player_67, Player_25",1
+2009,947,Royal Challengers Bangalore,126,"Player_71, Player_82, Player_79, Player_74, Player_15, Player_97, Player_13, Player_89, Player_64, Player_68, Player_73",2
+2023,173,Royal Challengers Bangalore,171,"Player_65, Player_82, Player_19, Player_99, Player_52, Player_1, Player_51, Player_10, Player_88, Player_78, Player_58",9
+2011,202,Delhi Capitals,91,"Player_50, Player_71, Player_93, Player_7, Player_12, Player_44, Player_29, Player_2, Player_34, Player_94, Player_36",9
+2013,28,Gujarat Titans,85,"Player_50, Player_55, Player_88, Player_99, Player_78, Player_9, Player_72, Player_97, Player_30, Player_8, Player_59",6
+2019,320,Rajasthan Royals,248,"Player_17, Player_96, Player_63, Player_21, Player_70, Player_2, Player_4, Player_54, Player_71, Player_100, Player_80",9
+2009,898,Gujarat Titans,70,"Player_90, Player_34, Player_29, Player_8, Player_28, Player_52, Player_16, Player_33, Player_5, Player_43, Player_2",7
+2010,540,Kolkata Knight Riders,90,"Player_61, Player_86, Player_9, Player_58, Player_62, Player_60, Player_31, Player_56, Player_10, Player_4, Player_67",8
+2012,156,Punjab Kings,108,"Player_18, Player_85, Player_19, Player_29, Player_36, Player_13, Player_48, Player_43, Player_33, Player_40, Player_17",0
+2021,462,Lucknow Super Giants,250,"Player_97, Player_40, Player_1, Player_30, Player_29, Player_67, Player_66, Player_73, Player_96, Player_41, Player_17",9
+2012,167,Kolkata Knight Riders,157,"Player_33, Player_82, Player_12, Player_96, Player_13, Player_77, Player_24, Player_1, Player_21, Player_63, Player_41",6
+2010,468,Gujarat Titans,78,"Player_15, Player_35, Player_30, Player_61, Player_76, Player_52, Player_54, Player_36, Player_3, Player_38, Player_94",10
+2011,596,Sunrisers Hyderabad,231,"Player_21, Player_30, Player_52, Player_16, Player_58, Player_20, Player_85, Player_8, Player_97, Player_48, Player_44",0
+2022,581,Sunrisers Hyderabad,112,"Player_64, Player_72, Player_53, Player_63, Player_21, Player_30, Player_70, Player_36, Player_47, Player_82, Player_65",2
+2017,205,Gujarat Titans,247,"Player_40, Player_20, Player_30, Player_99, Player_26, Player_85, Player_16, Player_100, Player_56, Player_94, Player_6",4
+2022,296,Chennai Super Kings,80,"Player_13, Player_22, Player_84, Player_71, Player_11, Player_67, Player_18, Player_74, Player_83, Player_99, Player_88",6
+2021,405,Gujarat Titans,147,"Player_15, Player_60, Player_2, Player_69, Player_63, Player_59, Player_66, Player_95, Player_54, Player_33, Player_87",9
+2013,291,Royal Challengers Bangalore,81,"Player_77, Player_18, Player_27, Player_97, Player_71, Player_3, Player_15, Player_47, Player_59, Player_94, Player_57",0
+2014,372,Mumbai Indians,100,"Player_66, Player_6, Player_24, Player_76, Player_99, Player_42, Player_74, Player_56, Player_83, Player_4, Player_55",0
+2019,458,Kolkata Knight Riders,88,"Player_53, Player_32, Player_56, Player_67, Player_60, Player_52, Player_83, Player_97, Player_40, Player_64, Player_87",2
+2011,413,Kolkata Knight Riders,67,"Player_50, Player_7, Player_17, Player_94, Player_71, Player_12, Player_6, Player_2, Player_36, Player_38, Player_60",7
+2010,348,Gujarat Titans,200,"Player_40, Player_28, Player_27, Player_25, Player_99, Player_4, Player_51, Player_68, Player_89, Player_3, Player_91",8
+2018,725,Mumbai Indians,175,"Player_44, Player_1, Player_60, Player_13, Player_100, Player_7, Player_10, Player_2, Player_86, Player_94, Player_36",1
+2016,797,Gujarat Titans,233,"Player_53, Player_20, Player_47, Player_1, Player_5, Player_98, Player_59, Player_10, Player_39, Player_12, Player_56",2
+2009,487,Sunrisers Hyderabad,180,"Player_84, Player_43, Player_45, Player_87, Player_83, Player_42, Player_19, Player_52, Player_51, Player_92, Player_22",7
+2019,51,Royal Challengers Bangalore,155,"Player_87, Player_61, Player_94, Player_24, Player_15, Player_28, Player_14, Player_89, Player_27, Player_92, Player_53",1
+2015,542,Lucknow Super Giants,147,"Player_74, Player_18, Player_90, Player_33, Player_21, Player_85, Player_45, Player_52, Player_82, Player_91, Player_15",7
+2015,330,Mumbai Indians,201,"Player_87, Player_27, Player_13, Player_37, Player_7, Player_82, Player_44, Player_53, Player_32, Player_60, Player_72",3
+2021,562,Delhi Capitals,212,"Player_8, Player_48, Player_63, Player_39, Player_25, Player_49, Player_53, Player_95, Player_42, Player_93, Player_22",7
+2009,338,Punjab Kings,147,"Player_21, Player_47, Player_13, Player_43, Player_17, Player_41, Player_3, Player_79, Player_60, Player_4, Player_15",6
+2019,520,Rajasthan Royals,115,"Player_80, Player_94, Player_53, Player_18, Player_2, Player_100, Player_75, Player_71, Player_62, Player_43, Player_82",4
+2011,730,Lucknow Super Giants,211,"Player_23, Player_43, Player_45, Player_65, Player_66, Player_26, Player_11, Player_56, Player_44, Player_24, Player_27",6
+2013,310,Rajasthan Royals,224,"Player_47, Player_6, Player_3, Player_73, Player_36, Player_57, Player_83, Player_19, Player_62, Player_97, Player_77",10
+2023,888,Kolkata Knight Riders,208,"Player_28, Player_64, Player_73, Player_82, Player_75, Player_96, Player_57, Player_58, Player_32, Player_44, Player_22",4
+2008,179,Chennai Super Kings,216,"Player_38, Player_13, Player_20, Player_52, Player_12, Player_66, Player_58, Player_2, Player_8, Player_90, Player_22",5
+2019,119,Gujarat Titans,234,"Player_74, Player_57, Player_46, Player_76, Player_47, Player_16, Player_65, Player_4, Player_72, Player_3, Player_6",10
+2021,470,Kolkata Knight Riders,145,"Player_80, Player_100, Player_64, Player_82, Player_78, Player_36, Player_18, Player_83, Player_1, Player_85, Player_11",10
+2008,491,Punjab Kings,53,"Player_83, Player_33, Player_77, Player_52, Player_36, Player_73, Player_14, Player_78, Player_43, Player_82, Player_71",5
+2010,710,Rajasthan Royals,168,"Player_48, Player_53, Player_56, Player_11, Player_47, Player_2, Player_42, Player_58, Player_6, Player_82, Player_21",0
+2013,72,Gujarat Titans,162,"Player_28, Player_19, Player_84, Player_63, Player_4, Player_87, Player_44, Player_20, Player_35, Player_17, Player_6",2
+2009,492,Lucknow Super Giants,233,"Player_25, Player_39, Player_10, Player_1, Player_73, Player_5, Player_51, Player_94, Player_88, Player_77, Player_82",8
+2023,125,Rajasthan Royals,139,"Player_83, Player_42, Player_80, Player_71, Player_21, Player_86, Player_15, Player_98, Player_23, Player_92, Player_31",6
+2011,890,Lucknow Super Giants,66,"Player_46, Player_98, Player_21, Player_38, Player_66, Player_17, Player_59, Player_31, Player_34, Player_7, Player_6",6
+2012,627,Mumbai Indians,172,"Player_68, Player_52, Player_70, Player_2, Player_83, Player_30, Player_65, Player_92, Player_36, Player_61, Player_10",8
+2013,295,Chennai Super Kings,74,"Player_10, Player_70, Player_38, Player_63, Player_20, Player_75, Player_94, Player_100, Player_55, Player_27, Player_72",6
+2008,64,Mumbai Indians,235,"Player_94, Player_81, Player_48, Player_38, Player_37, Player_56, Player_70, Player_88, Player_11, Player_17, Player_42",0
+2008,608,Rajasthan Royals,183,"Player_22, Player_82, Player_95, Player_23, Player_2, Player_35, Player_17, Player_91, Player_78, Player_28, Player_40",9
+2011,827,Punjab Kings,191,"Player_80, Player_36, Player_60, Player_47, Player_31, Player_41, Player_76, Player_99, Player_66, Player_28, Player_67",9
+2009,282,Lucknow Super Giants,72,"Player_54, Player_79, Player_62, Player_27, Player_53, Player_87, Player_11, Player_3, Player_80, Player_22, Player_82",9
+2011,292,Mumbai Indians,250,"Player_61, Player_57, Player_96, Player_33, Player_49, Player_86, Player_53, Player_69, Player_77, Player_64, Player_94",4
+2019,876,Lucknow Super Giants,248,"Player_53, Player_39, Player_47, Player_5, Player_45, Player_67, Player_1, Player_56, Player_78, Player_35, Player_65",1
+2011,273,Rajasthan Royals,154,"Player_45, Player_44, Player_31, Player_34, Player_46, Player_100, Player_92, Player_28, Player_77, Player_63, Player_39",4
+2018,245,Lucknow Super Giants,126,"Player_78, Player_12, Player_70, Player_75, Player_63, Player_9, Player_80, Player_99, Player_11, Player_49, Player_7",6
+2019,516,Chennai Super Kings,150,"Player_13, Player_47, Player_75, Player_48, Player_36, Player_42, Player_43, Player_69, Player_50, Player_81, Player_14",10
+2018,913,Punjab Kings,93,"Player_82, Player_76, Player_22, Player_99, Player_32, Player_29, Player_97, Player_26, Player_28, Player_35, Player_19",0
+2020,270,Lucknow Super Giants,69,"Player_2, Player_19, Player_73, Player_42, Player_39, Player_27, Player_37, Player_84, Player_71, Player_52, Player_91",0
+2014,877,Chennai Super Kings,184,"Player_80, Player_57, Player_25, Player_93, Player_30, Player_74, Player_64, Player_4, Player_56, Player_7, Player_60",4
+2019,620,Royal Challengers Bangalore,220,"Player_24, Player_72, Player_6, Player_91, Player_3, Player_90, Player_50, Player_36, Player_31, Player_9, Player_63",1
+2022,277,Gujarat Titans,131,"Player_19, Player_2, Player_48, Player_34, Player_4, Player_93, Player_85, Player_21, Player_51, Player_58, Player_59",6
+2016,357,Gujarat Titans,248,"Player_55, Player_86, Player_79, Player_100, Player_19, Player_8, Player_13, Player_51, Player_62, Player_42, Player_25",6
+2020,109,Royal Challengers Bangalore,179,"Player_90, Player_99, Player_88, Player_67, Player_15, Player_4, Player_38, Player_53, Player_18, Player_43, Player_9",5
+2012,627,Lucknow Super Giants,130,"Player_72, Player_50, Player_12, Player_1, Player_82, Player_65, Player_86, Player_60, Player_14, Player_83, Player_16",8
+2023,452,Kolkata Knight Riders,163,"Player_63, Player_16, Player_62, Player_50, Player_70, Player_94, Player_20, Player_87, Player_56, Player_19, Player_49",1
+2009,111,Royal Challengers Bangalore,153,"Player_37, Player_97, Player_95, Player_52, Player_24, Player_75, Player_72, Player_6, Player_10, Player_48, Player_30",5
+2010,175,Chennai Super Kings,245,"Player_82, Player_78, Player_7, Player_89, Player_35, Player_95, Player_50, Player_86, Player_77, Player_69, Player_23",5
+2012,751,Punjab Kings,62,"Player_64, Player_24, Player_60, Player_40, Player_49, Player_4, Player_82, Player_54, Player_2, Player_73, Player_21",3
+2009,347,Gujarat Titans,88,"Player_17, Player_29, Player_79, Player_38, Player_100, Player_60, Player_97, Player_88, Player_54, Player_65, Player_61",0
+2020,708,Lucknow Super Giants,235,"Player_89, Player_3, Player_93, Player_42, Player_62, Player_13, Player_38, Player_9, Player_56, Player_64, Player_16",0
+2015,968,Mumbai Indians,170,"Player_86, Player_76, Player_81, Player_12, Player_73, Player_34, Player_25, Player_94, Player_63, Player_57, Player_49",8
+2018,522,Punjab Kings,227,"Player_57, Player_1, Player_68, Player_47, Player_60, Player_7, Player_62, Player_46, Player_43, Player_49, Player_92",7
+2023,196,Royal Challengers Bangalore,187,"Player_54, Player_86, Player_72, Player_71, Player_46, Player_41, Player_25, Player_14, Player_27, Player_2, Player_22",5
+2017,909,Mumbai Indians,53,"Player_62, Player_74, Player_16, Player_14, Player_35, Player_70, Player_30, Player_53, Player_20, Player_51, Player_82",10
+2009,116,Lucknow Super Giants,104,"Player_7, Player_14, Player_77, Player_80, Player_22, Player_6, Player_53, Player_25, Player_59, Player_52, Player_26",7
+2020,213,Mumbai Indians,208,"Player_100, Player_58, Player_82, Player_81, Player_96, Player_17, Player_22, Player_98, Player_48, Player_47, Player_54",3
+2022,315,Chennai Super Kings,63,"Player_66, Player_38, Player_95, Player_56, Player_87, Player_41, Player_32, Player_23, Player_70, Player_78, Player_91",2
+2008,576,Sunrisers Hyderabad,234,"Player_77, Player_20, Player_28, Player_27, Player_100, Player_22, Player_1, Player_49, Player_89, Player_50, Player_81",10
+2016,88,Mumbai Indians,106,"Player_67, Player_64, Player_57, Player_72, Player_54, Player_53, Player_52, Player_89, Player_76, Player_46, Player_41",4
+2023,800,Punjab Kings,219,"Player_82, Player_34, Player_39, Player_92, Player_84, Player_76, Player_40, Player_56, Player_49, Player_78, Player_75",10
+2022,700,Delhi Capitals,122,"Player_59, Player_58, Player_79, Player_49, Player_94, Player_85, Player_18, Player_16, Player_37, Player_20, Player_82",10
+2014,697,Sunrisers Hyderabad,148,"Player_86, Player_37, Player_1, Player_40, Player_97, Player_4, Player_8, Player_3, Player_59, Player_21, Player_77",6
+2015,887,Mumbai Indians,62,"Player_76, Player_59, Player_29, Player_74, Player_65, Player_34, Player_64, Player_36, Player_13, Player_67, Player_99",3
+2022,462,Sunrisers Hyderabad,157,"Player_96, Player_45, Player_61, Player_38, Player_81, Player_48, Player_20, Player_11, Player_22, Player_42, Player_9",1
+2022,75,Chennai Super Kings,138,"Player_41, Player_82, Player_19, Player_20, Player_58, Player_31, Player_40, Player_60, Player_7, Player_39, Player_84",5
+2015,862,Royal Challengers Bangalore,57,"Player_51, Player_95, Player_24, Player_30, Player_40, Player_36, Player_35, Player_80, Player_32, Player_46, Player_75",6
+2017,760,Rajasthan Royals,97,"Player_31, Player_99, Player_20, Player_1, Player_22, Player_65, Player_21, Player_92, Player_100, Player_5, Player_96",6
+2016,332,Royal Challengers Bangalore,243,"Player_36, Player_29, Player_30, Player_52, Player_99, Player_34, Player_8, Player_38, Player_27, Player_18, Player_2",10
+2018,648,Chennai Super Kings,179,"Player_32, Player_71, Player_1, Player_84, Player_95, Player_26, Player_37, Player_45, Player_75, Player_11, Player_62",1
+2019,617,Lucknow Super Giants,247,"Player_97, Player_35, Player_25, Player_15, Player_45, Player_58, Player_4, Player_12, Player_59, Player_3, Player_14",10
+2014,789,Gujarat Titans,148,"Player_51, Player_56, Player_76, Player_85, Player_23, Player_69, Player_13, Player_15, Player_52, Player_20, Player_7",9
+2023,768,Mumbai Indians,158,"Player_98, Player_29, Player_94, Player_4, Player_12, Player_69, Player_51, Player_42, Player_70, Player_91, Player_47",6
+2016,345,Lucknow Super Giants,210,"Player_47, Player_16, Player_86, Player_100, Player_74, Player_29, Player_11, Player_67, Player_90, Player_61, Player_53",8
+2017,717,Punjab Kings,58,"Player_34, Player_4, Player_45, Player_53, Player_7, Player_99, Player_70, Player_84, Player_93, Player_6, Player_61",10
+2022,206,Chennai Super Kings,61,"Player_40, Player_19, Player_67, Player_93, Player_33, Player_48, Player_30, Player_88, Player_79, Player_17, Player_73",3
+2020,588,Royal Challengers Bangalore,51,"Player_26, Player_95, Player_18, Player_35, Player_28, Player_3, Player_72, Player_96, Player_79, Player_62, Player_45",1
+2017,594,Gujarat Titans,227,"Player_57, Player_44, Player_65, Player_54, Player_79, Player_50, Player_96, Player_73, Player_88, Player_33, Player_31",8
+2013,650,Sunrisers Hyderabad,218,"Player_30, Player_48, Player_81, Player_15, Player_85, Player_51, Player_66, Player_9, Player_64, Player_91, Player_96",3
+2023,873,Chennai Super Kings,126,"Player_73, Player_45, Player_19, Player_35, Player_42, Player_26, Player_52, Player_63, Player_6, Player_90, Player_56",5
+2009,300,Delhi Capitals,216,"Player_5, Player_26, Player_14, Player_57, Player_45, Player_85, Player_53, Player_63, Player_70, Player_34, Player_40",2
+2009,537,Lucknow Super Giants,155,"Player_19, Player_28, Player_48, Player_7, Player_71, Player_78, Player_57, Player_36, Player_67, Player_64, Player_45",0
+2008,743,Mumbai Indians,129,"Player_75, Player_57, Player_19, Player_46, Player_24, Player_96, Player_21, Player_42, Player_40, Player_87, Player_98",6
+2011,678,Gujarat Titans,120,"Player_14, Player_47, Player_34, Player_61, Player_71, Player_97, Player_24, Player_82, Player_28, Player_75, Player_27",6
+2010,800,Kolkata Knight Riders,55,"Player_20, Player_44, Player_45, Player_55, Player_86, Player_74, Player_31, Player_58, Player_68, Player_72, Player_40",1
+2018,536,Kolkata Knight Riders,236,"Player_73, Player_4, Player_47, Player_86, Player_77, Player_25, Player_31, Player_96, Player_76, Player_54, Player_44",6
+2008,806,Punjab Kings,83,"Player_64, Player_89, Player_21, Player_100, Player_69, Player_29, Player_33, Player_4, Player_83, Player_20, Player_9",2
+2023,71,Mumbai Indians,213,"Player_75, Player_96, Player_80, Player_71, Player_11, Player_34, Player_31, Player_42, Player_43, Player_62, Player_72",7
+2017,862,Punjab Kings,125,"Player_6, Player_97, Player_24, Player_91, Player_26, Player_37, Player_32, Player_90, Player_64, Player_93, Player_68",3
+2020,954,Mumbai Indians,130,"Player_44, Player_18, Player_40, Player_70, Player_69, Player_100, Player_76, Player_90, Player_36, Player_91, Player_1",8
+2012,326,Chennai Super Kings,93,"Player_36, Player_67, Player_71, Player_40, Player_75, Player_80, Player_34, Player_44, Player_43, Player_13, Player_42",0
+2023,652,Punjab Kings,159,"Player_58, Player_99, Player_62, Player_84, Player_64, Player_74, Player_20, Player_54, Player_32, Player_14, Player_98",9
+2009,51,Kolkata Knight Riders,71,"Player_88, Player_69, Player_89, Player_33, Player_98, Player_48, Player_91, Player_73, Player_18, Player_46, Player_10",1
+2019,544,Punjab Kings,63,"Player_27, Player_82, Player_40, Player_60, Player_90, Player_32, Player_28, Player_47, Player_85, Player_34, Player_13",2
+2015,311,Punjab Kings,103,"Player_44, Player_54, Player_80, Player_64, Player_13, Player_6, Player_62, Player_27, Player_45, Player_1, Player_68",0
+2021,492,Punjab Kings,245,"Player_71, Player_19, Player_29, Player_44, Player_57, Player_20, Player_96, Player_84, Player_52, Player_98, Player_65",5
+2018,986,Rajasthan Royals,161,"Player_49, Player_71, Player_76, Player_81, Player_56, Player_36, Player_47, Player_89, Player_88, Player_75, Player_66",10
+2011,464,Delhi Capitals,230,"Player_7, Player_72, Player_74, Player_89, Player_81, Player_77, Player_15, Player_5, Player_3, Player_85, Player_99",0
+2011,438,Royal Challengers Bangalore,211,"Player_70, Player_80, Player_20, Player_14, Player_21, Player_68, Player_4, Player_99, Player_100, Player_78, Player_27",1
+2009,106,Delhi Capitals,171,"Player_7, Player_69, Player_46, Player_91, Player_28, Player_51, Player_18, Player_72, Player_73, Player_63, Player_42",7
+2022,424,Chennai Super Kings,169,"Player_61, Player_57, Player_68, Player_36, Player_14, Player_85, Player_43, Player_93, Player_45, Player_55, Player_74",8
+2015,640,Lucknow Super Giants,236,"Player_18, Player_86, Player_56, Player_78, Player_29, Player_31, Player_57, Player_44, Player_4, Player_96, Player_19",0
+2011,103,Chennai Super Kings,230,"Player_36, Player_28, Player_57, Player_52, Player_42, Player_30, Player_68, Player_38, Player_41, Player_8, Player_19",1
+2008,90,Rajasthan Royals,245,"Player_20, Player_52, Player_24, Player_23, Player_40, Player_18, Player_26, Player_74, Player_38, Player_87, Player_68",8
+2022,113,Lucknow Super Giants,165,"Player_50, Player_65, Player_5, Player_25, Player_44, Player_47, Player_63, Player_14, Player_69, Player_96, Player_7",8
+2017,214,Kolkata Knight Riders,154,"Player_47, Player_69, Player_30, Player_86, Player_82, Player_33, Player_83, Player_44, Player_55, Player_19, Player_1",9
+2016,8,Mumbai Indians,164,"Player_99, Player_94, Player_26, Player_89, Player_11, Player_9, Player_22, Player_19, Player_12, Player_98, Player_56",3
+2009,714,Royal Challengers Bangalore,171,"Player_58, Player_91, Player_47, Player_50, Player_87, Player_12, Player_48, Player_71, Player_38, Player_86, Player_81",0
+2022,371,Royal Challengers Bangalore,167,"Player_35, Player_22, Player_27, Player_43, Player_29, Player_62, Player_7, Player_78, Player_63, Player_52, Player_94",1
+2011,209,Delhi Capitals,248,"Player_64, Player_2, Player_31, Player_73, Player_74, Player_66, Player_15, Player_59, Player_40, Player_75, Player_46",9
+2017,220,Mumbai Indians,233,"Player_39, Player_82, Player_98, Player_25, Player_95, Player_30, Player_66, Player_89, Player_47, Player_65, Player_61",7
+2020,396,Mumbai Indians,159,"Player_49, Player_63, Player_27, Player_7, Player_14, Player_35, Player_72, Player_50, Player_29, Player_55, Player_36",8
+2023,134,Gujarat Titans,88,"Player_22, Player_59, Player_100, Player_96, Player_98, Player_66, Player_64, Player_34, Player_1, Player_13, Player_86",8
+2021,782,Lucknow Super Giants,121,"Player_63, Player_52, Player_25, Player_11, Player_12, Player_64, Player_66, Player_91, Player_96, Player_16, Player_55",6
+2023,222,Punjab Kings,144,"Player_58, Player_24, Player_42, Player_53, Player_26, Player_34, Player_11, Player_7, Player_47, Player_77, Player_60",9
+2008,892,Delhi Capitals,157,"Player_94, Player_90, Player_46, Player_84, Player_23, Player_21, Player_91, Player_2, Player_77, Player_41, Player_27",7
+2015,621,Rajasthan Royals,157,"Player_54, Player_44, Player_47, Player_75, Player_24, Player_26, Player_56, Player_76, Player_55, Player_69, Player_84",2
+2017,156,Royal Challengers Bangalore,148,"Player_61, Player_40, Player_9, Player_73, Player_7, Player_57, Player_34, Player_49, Player_13, Player_66, Player_43",7
+2009,219,Kolkata Knight Riders,95,"Player_49, Player_96, Player_92, Player_86, Player_20, Player_34, Player_19, Player_26, Player_24, Player_31, Player_10",1
+2018,515,Rajasthan Royals,227,"Player_34, Player_59, Player_61, Player_13, Player_57, Player_98, Player_78, Player_35, Player_84, Player_2, Player_82",3
+2021,429,Gujarat Titans,118,"Player_28, Player_76, Player_52, Player_50, Player_85, Player_8, Player_89, Player_45, Player_34, Player_70, Player_79",3
+2021,766,Kolkata Knight Riders,64,"Player_13, Player_62, Player_33, Player_88, Player_59, Player_20, Player_36, Player_50, Player_80, Player_73, Player_11",5
+2015,364,Delhi Capitals,146,"Player_71, Player_64, Player_93, Player_61, Player_28, Player_38, Player_72, Player_45, Player_33, Player_26, Player_97",10
+2014,666,Chennai Super Kings,243,"Player_52, Player_35, Player_16, Player_79, Player_43, Player_94, Player_65, Player_85, Player_89, Player_27, Player_37",6
+2023,815,Punjab Kings,102,"Player_8, Player_6, Player_12, Player_30, Player_36, Player_26, Player_89, Player_76, Player_9, Player_28, Player_53",0
+2021,266,Lucknow Super Giants,118,"Player_58, Player_60, Player_74, Player_69, Player_52, Player_61, Player_50, Player_83, Player_2, Player_56, Player_28",2
+2010,748,Rajasthan Royals,230,"Player_67, Player_4, Player_21, Player_87, Player_89, Player_24, Player_49, Player_72, Player_78, Player_75, Player_96",10
+2019,759,Royal Challengers Bangalore,173,"Player_100, Player_61, Player_1, Player_39, Player_88, Player_77, Player_14, Player_89, Player_57, Player_15, Player_93",1
+2013,318,Rajasthan Royals,85,"Player_95, Player_47, Player_84, Player_52, Player_80, Player_27, Player_10, Player_7, Player_11, Player_39, Player_58",7
+2010,67,Gujarat Titans,118,"Player_90, Player_36, Player_66, Player_1, Player_45, Player_48, Player_8, Player_3, Player_26, Player_84, Player_31",6
+2012,429,Punjab Kings,141,"Player_80, Player_29, Player_66, Player_86, Player_35, Player_58, Player_59, Player_51, Player_75, Player_93, Player_40",10
+2023,733,Lucknow Super Giants,180,"Player_7, Player_19, Player_12, Player_83, Player_58, Player_3, Player_51, Player_17, Player_4, Player_5, Player_10",6
+2018,690,Lucknow Super Giants,214,"Player_28, Player_85, Player_73, Player_4, Player_17, Player_18, Player_64, Player_68, Player_51, Player_48, Player_80",8
+2022,538,Lucknow Super Giants,142,"Player_50, Player_27, Player_16, Player_44, Player_58, Player_30, Player_6, Player_81, Player_87, Player_2, Player_56",9
+2011,345,Royal Challengers Bangalore,53,"Player_72, Player_63, Player_95, Player_9, Player_67, Player_14, Player_6, Player_52, Player_75, Player_3, Player_46",10
+2015,627,Mumbai Indians,238,"Player_92, Player_58, Player_81, Player_69, Player_18, Player_47, Player_79, Player_4, Player_68, Player_24, Player_99",2
+2014,172,Chennai Super Kings,198,"Player_40, Player_35, Player_19, Player_16, Player_76, Player_23, Player_21, Player_70, Player_46, Player_41, Player_29",3
+2017,386,Rajasthan Royals,99,"Player_63, Player_4, Player_24, Player_19, Player_82, Player_48, Player_45, Player_25, Player_74, Player_11, Player_75",0
+2016,967,Gujarat Titans,217,"Player_51, Player_82, Player_53, Player_63, Player_60, Player_8, Player_68, Player_87, Player_47, Player_40, Player_67",9
+2018,268,Kolkata Knight Riders,50,"Player_7, Player_11, Player_49, Player_76, Player_69, Player_89, Player_1, Player_29, Player_39, Player_96, Player_25",9
+2018,92,Delhi Capitals,72,"Player_29, Player_66, Player_10, Player_100, Player_65, Player_98, Player_68, Player_61, Player_12, Player_81, Player_27",8
+2009,444,Gujarat Titans,83,"Player_98, Player_44, Player_46, Player_58, Player_66, Player_15, Player_89, Player_11, Player_28, Player_59, Player_79",8
+2013,602,Punjab Kings,118,"Player_18, Player_81, Player_42, Player_70, Player_31, Player_27, Player_33, Player_22, Player_78, Player_79, Player_48",4
+2018,292,Delhi Capitals,138,"Player_52, Player_91, Player_27, Player_15, Player_20, Player_10, Player_75, Player_46, Player_7, Player_71, Player_51",9
+2015,841,Gujarat Titans,166,"Player_23, Player_65, Player_31, Player_71, Player_2, Player_28, Player_68, Player_53, Player_27, Player_80, Player_92",10
+2011,689,Delhi Capitals,225,"Player_92, Player_17, Player_12, Player_16, Player_26, Player_90, Player_93, Player_18, Player_49, Player_13, Player_95",4
+2023,272,Chennai Super Kings,178,"Player_85, Player_81, Player_21, Player_30, Player_23, Player_95, Player_3, Player_61, Player_64, Player_41, Player_62",9
+2019,803,Royal Challengers Bangalore,50,"Player_77, Player_35, Player_36, Player_90, Player_32, Player_72, Player_31, Player_68, Player_56, Player_66, Player_25",2
+2015,117,Lucknow Super Giants,112,"Player_57, Player_90, Player_28, Player_24, Player_6, Player_10, Player_1, Player_63, Player_58, Player_9, Player_71",7
+2014,131,Chennai Super Kings,183,"Player_8, Player_85, Player_21, Player_31, Player_14, Player_77, Player_26, Player_93, Player_1, Player_7, Player_98",4
+2023,465,Punjab Kings,83,"Player_74, Player_75, Player_95, Player_78, Player_93, Player_31, Player_5, Player_94, Player_50, Player_54, Player_6",8
+2011,875,Kolkata Knight Riders,74,"Player_58, Player_63, Player_18, Player_67, Player_83, Player_27, Player_76, Player_68, Player_70, Player_17, Player_9",1
+2022,467,Royal Challengers Bangalore,154,"Player_6, Player_34, Player_69, Player_59, Player_24, Player_14, Player_55, Player_97, Player_63, Player_35, Player_41",10
+2023,222,Mumbai Indians,239,"Player_3, Player_14, Player_22, Player_64, Player_55, Player_81, Player_21, Player_46, Player_10, Player_62, Player_20",8
+2022,679,Lucknow Super Giants,143,"Player_9, Player_44, Player_60, Player_81, Player_32, Player_31, Player_86, Player_27, Player_56, Player_61, Player_58",1
+2019,632,Mumbai Indians,63,"Player_25, Player_65, Player_46, Player_9, Player_89, Player_74, Player_36, Player_33, Player_38, Player_15, Player_94",8
+2009,784,Kolkata Knight Riders,193,"Player_23, Player_94, Player_9, Player_99, Player_81, Player_45, Player_48, Player_27, Player_96, Player_32, Player_33",5
+2009,951,Sunrisers Hyderabad,188,"Player_18, Player_58, Player_16, Player_64, Player_57, Player_80, Player_84, Player_1, Player_69, Player_96, Player_37",0
+2019,419,Mumbai Indians,247,"Player_20, Player_48, Player_2, Player_73, Player_64, Player_44, Player_56, Player_72, Player_10, Player_69, Player_27",6
+2015,456,Sunrisers Hyderabad,77,"Player_95, Player_6, Player_10, Player_15, Player_14, Player_100, Player_94, Player_43, Player_25, Player_83, Player_1",1
+2015,90,Lucknow Super Giants,91,"Player_69, Player_58, Player_82, Player_54, Player_72, Player_51, Player_96, Player_79, Player_91, Player_87, Player_1",3
+2009,469,Chennai Super Kings,95,"Player_76, Player_6, Player_81, Player_21, Player_37, Player_4, Player_69, Player_31, Player_22, Player_59, Player_50",7
+2019,129,Lucknow Super Giants,164,"Player_39, Player_88, Player_4, Player_21, Player_74, Player_42, Player_60, Player_58, Player_54, Player_36, Player_29",10
+2011,190,Gujarat Titans,141,"Player_47, Player_79, Player_80, Player_5, Player_53, Player_60, Player_76, Player_6, Player_65, Player_69, Player_37",1
+2012,229,Kolkata Knight Riders,139,"Player_74, Player_6, Player_45, Player_42, Player_11, Player_77, Player_12, Player_73, Player_5, Player_4, Player_16",2
+2011,811,Punjab Kings,236,"Player_89, Player_47, Player_1, Player_85, Player_93, Player_17, Player_42, Player_29, Player_92, Player_78, Player_55",7
+2016,793,Mumbai Indians,90,"Player_77, Player_8, Player_38, Player_1, Player_78, Player_21, Player_40, Player_63, Player_30, Player_41, Player_7",2
+2014,447,Kolkata Knight Riders,222,"Player_60, Player_47, Player_80, Player_79, Player_91, Player_1, Player_26, Player_34, Player_69, Player_23, Player_65",9
+2010,897,Gujarat Titans,113,"Player_59, Player_48, Player_60, Player_34, Player_18, Player_30, Player_97, Player_15, Player_98, Player_82, Player_10",5
+2012,347,Sunrisers Hyderabad,58,"Player_87, Player_23, Player_83, Player_49, Player_4, Player_89, Player_31, Player_14, Player_56, Player_53, Player_3",3
+2020,575,Gujarat Titans,205,"Player_95, Player_70, Player_55, Player_36, Player_94, Player_1, Player_99, Player_71, Player_41, Player_31, Player_40",8
+2012,57,Chennai Super Kings,139,"Player_55, Player_88, Player_35, Player_17, Player_85, Player_10, Player_68, Player_57, Player_65, Player_6, Player_97",3
+2016,594,Punjab Kings,222,"Player_94, Player_47, Player_2, Player_3, Player_36, Player_6, Player_26, Player_41, Player_14, Player_5, Player_93",2
+2015,248,Lucknow Super Giants,60,"Player_41, Player_78, Player_94, Player_66, Player_39, Player_20, Player_42, Player_76, Player_95, Player_73, Player_54",7
+2020,710,Gujarat Titans,91,"Player_56, Player_98, Player_73, Player_7, Player_97, Player_5, Player_29, Player_45, Player_37, Player_52, Player_12",8
+2020,496,Punjab Kings,123,"Player_52, Player_67, Player_3, Player_46, Player_65, Player_61, Player_82, Player_73, Player_39, Player_1, Player_22",8
+2016,414,Gujarat Titans,243,"Player_61, Player_88, Player_69, Player_85, Player_92, Player_46, Player_37, Player_64, Player_5, Player_73, Player_43",6
+2018,576,Delhi Capitals,98,"Player_84, Player_89, Player_85, Player_75, Player_59, Player_10, Player_56, Player_44, Player_79, Player_3, Player_8",0
+2020,925,Gujarat Titans,118,"Player_75, Player_20, Player_13, Player_52, Player_76, Player_32, Player_78, Player_95, Player_45, Player_89, Player_10",6
+2011,895,Rajasthan Royals,237,"Player_79, Player_60, Player_50, Player_23, Player_99, Player_4, Player_93, Player_19, Player_13, Player_66, Player_53",5
+2015,606,Mumbai Indians,122,"Player_18, Player_78, Player_11, Player_95, Player_44, Player_28, Player_63, Player_88, Player_61, Player_39, Player_59",5
+2017,561,Lucknow Super Giants,106,"Player_91, Player_50, Player_99, Player_9, Player_11, Player_79, Player_53, Player_90, Player_56, Player_21, Player_97",5
+2013,391,Sunrisers Hyderabad,166,"Player_31, Player_67, Player_99, Player_79, Player_88, Player_23, Player_69, Player_16, Player_64, Player_74, Player_77",0
+2014,196,Chennai Super Kings,127,"Player_5, Player_75, Player_98, Player_25, Player_97, Player_79, Player_80, Player_1, Player_17, Player_58, Player_43",2
+2019,235,Mumbai Indians,94,"Player_62, Player_86, Player_98, Player_64, Player_35, Player_89, Player_28, Player_99, Player_57, Player_92, Player_21",9
+2011,706,Delhi Capitals,94,"Player_12, Player_35, Player_37, Player_72, Player_41, Player_88, Player_2, Player_30, Player_70, Player_80, Player_31",4
+2016,283,Rajasthan Royals,140,"Player_16, Player_45, Player_89, Player_9, Player_12, Player_22, Player_70, Player_91, Player_71, Player_67, Player_18",7
+2013,450,Kolkata Knight Riders,54,"Player_17, Player_54, Player_58, Player_90, Player_81, Player_21, Player_53, Player_28, Player_95, Player_97, Player_85",8
+2013,275,Kolkata Knight Riders,94,"Player_95, Player_71, Player_25, Player_66, Player_87, Player_10, Player_48, Player_52, Player_29, Player_63, Player_23",1
+2018,185,Royal Challengers Bangalore,76,"Player_40, Player_94, Player_46, Player_21, Player_64, Player_39, Player_89, Player_9, Player_97, Player_92, Player_44",1
+2012,60,Rajasthan Royals,193,"Player_3, Player_16, Player_4, Player_50, Player_49, Player_35, Player_58, Player_77, Player_19, Player_68, Player_27",1
+2023,370,Lucknow Super Giants,243,"Player_19, Player_21, Player_25, Player_50, Player_85, Player_67, Player_6, Player_59, Player_93, Player_72, Player_27",3
+2011,478,Royal Challengers Bangalore,222,"Player_42, Player_65, Player_2, Player_23, Player_14, Player_9, Player_61, Player_47, Player_75, Player_82, Player_54",7
+2013,249,Rajasthan Royals,161,"Player_75, Player_30, Player_67, Player_80, Player_64, Player_95, Player_22, Player_13, Player_8, Player_55, Player_85",0
+2020,591,Gujarat Titans,178,"Player_76, Player_18, Player_15, Player_59, Player_69, Player_86, Player_97, Player_13, Player_8, Player_1, Player_70",9
+2015,431,Delhi Capitals,101,"Player_98, Player_70, Player_74, Player_94, Player_22, Player_59, Player_36, Player_29, Player_99, Player_8, Player_33",3
+2018,545,Rajasthan Royals,148,"Player_31, Player_9, Player_21, Player_53, Player_12, Player_65, Player_59, Player_87, Player_92, Player_100, Player_55",6
+2016,134,Mumbai Indians,214,"Player_25, Player_13, Player_43, Player_89, Player_1, Player_28, Player_55, Player_96, Player_76, Player_18, Player_26",7
+2020,659,Kolkata Knight Riders,149,"Player_3, Player_42, Player_43, Player_51, Player_81, Player_66, Player_65, Player_52, Player_96, Player_58, Player_33",1
+2019,172,Delhi Capitals,123,"Player_73, Player_52, Player_74, Player_86, Player_4, Player_35, Player_100, Player_96, Player_61, Player_82, Player_63",10
+2016,75,Kolkata Knight Riders,67,"Player_34, Player_97, Player_86, Player_46, Player_95, Player_17, Player_2, Player_41, Player_45, Player_87, Player_15",7
+2017,755,Gujarat Titans,90,"Player_96, Player_70, Player_93, Player_32, Player_10, Player_80, Player_7, Player_73, Player_66, Player_30, Player_89",2
+2019,212,Lucknow Super Giants,225,"Player_16, Player_57, Player_47, Player_24, Player_75, Player_32, Player_43, Player_20, Player_100, Player_22, Player_91",2
+2008,656,Gujarat Titans,96,"Player_90, Player_20, Player_15, Player_7, Player_69, Player_70, Player_1, Player_49, Player_48, Player_34, Player_54",1
+2014,413,Lucknow Super Giants,157,"Player_23, Player_98, Player_33, Player_48, Player_10, Player_62, Player_77, Player_89, Player_86, Player_9, Player_73",0
+2014,923,Gujarat Titans,210,"Player_35, Player_54, Player_24, Player_82, Player_27, Player_70, Player_29, Player_51, Player_19, Player_31, Player_97",5
+2020,70,Punjab Kings,183,"Player_6, Player_14, Player_34, Player_70, Player_57, Player_86, Player_23, Player_62, Player_63, Player_59, Player_10",7
+2016,800,Royal Challengers Bangalore,238,"Player_13, Player_85, Player_62, Player_72, Player_9, Player_99, Player_50, Player_25, Player_43, Player_31, Player_38",3
+2020,26,Chennai Super Kings,69,"Player_35, Player_67, Player_47, Player_68, Player_39, Player_4, Player_80, Player_20, Player_32, Player_2, Player_65",10
+2014,253,Delhi Capitals,60,"Player_6, Player_77, Player_38, Player_46, Player_79, Player_92, Player_40, Player_33, Player_39, Player_65, Player_86",4
+2014,586,Royal Challengers Bangalore,112,"Player_16, Player_43, Player_63, Player_65, Player_89, Player_31, Player_59, Player_30, Player_88, Player_84, Player_28",8
+2019,843,Mumbai Indians,148,"Player_31, Player_85, Player_26, Player_77, Player_37, Player_34, Player_50, Player_74, Player_21, Player_67, Player_65",8
+2022,616,Royal Challengers Bangalore,86,"Player_1, Player_53, Player_5, Player_96, Player_47, Player_27, Player_82, Player_42, Player_92, Player_60, Player_23",1
+2019,899,Punjab Kings,176,"Player_70, Player_52, Player_94, Player_74, Player_24, Player_89, Player_64, Player_57, Player_29, Player_12, Player_88",6
