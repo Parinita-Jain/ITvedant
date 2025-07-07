@@ -1,148 +1,104 @@
 '''
-print(f"2 * 1 = ",2*1)
-print(f"2 * 2 = ",2*2)
-print(f"2 * 3 = ",2*3)
-print(f"2 * 4 = ",2*4)
-print(f"2 * 5 = ",2*5)
-
-'''
-#--------------------------------
-'''
-# for loop -- iterations iterating 
-for i in range(1,11,2):
-    print(f"2 * {i} = {2*i}")
-'''
-# range()-- syntax -- range(start_index,stop_index,steps)
-# by default start index is 0
-# step is increment - by 1
-# gives values from start_index to stop_index-1
-'''
-for i in range(1,51,2):
+for i in range(5,26):
     print(i)
 '''
-#--------------
+#------------------------
 '''
-for i in range(2,51,2):
+for i in ("a","e","i","o","u"):
     print(i)
-
 '''
-#--------------------
-#while loop
+#--------------------------
+# range(starting_criteria,stopping_criteria-1,jump)
 '''
-for i in range(1,6):
+for i in range(5,26,5):
     print(i)
-
-'''
-'''
-i=1
-while i<=5:
-    print(i)
-    i=i+1
-'''
-'''
-i=0
-while True:
-    a=input("Enter your name : ")
-    print(f"Hello {a}")
-    ch=input("Do u want to continue :(y/n): ")
-    if ch=="n":
-        break
-print("Outside loop")
-'''
-'''
-for i in range(5):
-    if i==3:
-        break
-    print(f"{i} inside loop")
-print("Ouside loop")
-
-'''
-'''
-for i in range(8):
-    if i==3:
-        print("Good afternoon")
-        continue
-        print("Hi")
-    print(f"{i} inside loop")
-print("Ouside loop")
-'''
-'''
-for i in range(8):
-    if i==3:
-        print("Good afternoon")
-        pass
-        print("Hi")
-    print(f"{i} inside loop")
-print("Ouside loop")
-
-'''
-'''
-for i in range(8):
-    pass
-'''
-#--------------------------------
-'''
-for i in range(1,6):
-    print(i,end=" ")
-'''
-#---------------------------
-'''
-for i in range(1,6):
-    print("*"*i)
-'''
-#-------------
-'''
-for i in range(5,0,-1):
-    print("*"*i)
 '''
 #----------------
 '''
-for i in range(1,6):
-    if(i==4):
-        print("Hello")
-    else:
-        print(i)
+for i in range(1,21):
+    print(f"2 * {i} = {2*i}")
+'''
+#-----------------------
+'''
+for i in range(1,7):
+    print(i)
+
+'''
+#-------------
+'''
+j=1
+while j<=6:
+    print(j)
+    j=j+1
+
+'''
+#-----------------------
+'''
+# break
+for i in range(10,0,-1):
+    if i==5:
+        print("Inside if")
+        break
+    print("Inside loop")
+    print(i)
+print("Outside loop")
+'''
+#----------------------
+#---
+'''
+i=0
+while True:
+    n=input("Enter your name : ")
+    print(f"Your name is : {n}")
+    i=i+1
+    ch=input("Do u want this continue (Y/N) : ")
+    if ch=="N" or ch=="n":
+        break
+print(f"U entered names {i} times")
+
+'''
+#--------------
+'''
+# continue
+for i in range(10,0,-1):
+    if i==5:
+        print("Inside if")
+        continue
+        j=6
+        print(j)
+        print("After continue")
+    print("Inside loop")
+    print(i)
+print("Outside loop")
 '''
 #---------------------
 '''
-i=2
-if(i==2):
-    for j in range(5,0,-1):
-        print(j)
-else:
-    print("Good luck")
+# pass
+for i in range(10,0,-1):
+    pass
 '''
 #-----------------------
-# Nested loop
 '''
-for i in range(1,4):
-    for j in range(60,100,10):
-        print(f"i:{i} j:{j}")
-'''
-#-----------
-'''
-for i in range(1,5):
-    for j in range(1,5):
-        print(j,end=" ")
-    print()
+for i in range(10,0,-1):
+    print(i,end=" ")
 '''
 #---------------
 '''
 for i in range(1,5):
+    print(" * "*i)
+'''
+#------------
+'''
+for i in range(1,4):
+    for j in range(6,10):
+        print(f"{i}----------{j}")
+'''
+#-------------
+for i in range(1,7):
     for j in range(1,5):
-        print(i,end=" ")
+        print(j,end=" ")
     print()
 
-'''
-1
-12
-123
-1234
-#----
-1
-22
-333
-4444
 
 
 
@@ -155,54 +111,7 @@ for i in range(1,5):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
