@@ -1,3 +1,59 @@
+What Is a Window Function?
+A Window Function performs a calculation across a group of rows, but without collapsing them into one row (unlike GROUP BY).
+
+It’s like saying:
+
+“I want to see each employee’s salary and also the average salary in their department.”
+
+
+
+🧾 Window Function Syntax
+
+<window_function>() OVER (
+  PARTITION BY column_to_group
+  ORDER BY column_to_sort
+)
+🔍 Parts Explained:
+Part	Meaning
+window_function()	Like RANK(), SUM(), AVG(), etc.
+PARTITION BY	Optional – defines grouping (like GROUP BY, but keeps rows)
+ORDER BY	Optional – defines how to sort within each partition
+
+
+SELECT
+  emp_NAME,
+  DEPT_NAME,
+  SALARY,
+  RANK() OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS rank_in_dept
+FROM employee;
+
+Keeps each employee row
+
+Groups by DEPT_NAME
+
+Orders salaries in descending order
+
+Assigns a rank within each department
+
+🧮 Popular Window Functions
+Function	What It Does
+RANK()	Ranking with gaps (1, 2, 2, 4…)
+DENSE_RANK()	Ranking without gaps (1, 2, 2, 3…)
+ROW_NUMBER()	Unique number per row
+SUM()	Running total
+AVG()	Rolling average
+LAG()	Value from previous row
+LEAD()	Value from next row
+NTILE(n)	Divide rows into n equal groups
+
+🎯 Summary in Simple Words
+Without Window Function	You only see individual rows
+With Window Function	You see individual rows + context from group (like rank, total, etc.)
+
+#----------------------------------------
+
+
+
 drop database if exists window_fun;
 create database window_fun;
 use window_fun;
@@ -100,3 +156,74 @@ select e.*,
 lag(salary) over(partition by dept_name order by emp_id) as prev_empl_sal,
 lead(salary) over(partition by dept_name order by emp_id) as next_empl_sal
 from employee e;
+
+#--------------------------------
+1. RANK() – Rank employees within each department by salary
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  RANK() OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS rank_in_dept
+FROM employee;
+2. DENSE_RANK() – Avoids skipping ranks when ties occur
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  DENSE_RANK() OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS dense_rank
+FROM employee;
+3. ROW_NUMBER() – Unique row numbering
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  ROW_NUMBER() OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS row_num
+FROM employee;
+4. NTILE(3) – Divide employees into 3 salary buckets per department
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  NTILE(3) OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS salary_group
+FROM employee;
+5. LEAD() / LAG() – Compare salary with next/previous employee
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  LAG(SALARY, 1) OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS prev_salary,
+  LEAD(SALARY, 1) OVER (PARTITION BY DEPT_NAME ORDER BY SALARY DESC) AS next_salary
+FROM employee;
+6. SUM() OVER – Running total of salary by department
+sql
+Copy
+Edit
+SELECT 
+  emp_NAME, 
+  DEPT_NAME, 
+  SALARY,
+  SUM(SALARY) OVER (PARTITION BY DEPT_NAME ORDER BY SALARY) AS running_total
+
+
+
+
+
+
+
+
+
