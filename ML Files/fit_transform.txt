@@ -1,0 +1,22 @@
+When working with machine learning models, fit_transform and transform are used for preprocessing the data, 
+such as scaling, normalizing, or encoding. The difference in their usage between training and testing datasets 
+arises because of how the model learns and applies transformations. Here's why:
+
+1. fit_transform on Training Data :The fit_transform method does two things:
+   a.> Fit: It computes the parameters (e.g., mean, standard deviation, min, max) required for the transformation 
+            based on the training data.
+   b.> Transform: It then applies the transformation to the training data using the computed parameters.
+
+This is done only on the training data because the model needs to learn the parameters from the training set, 
+which represents the data distribution the model will be trained on.
+
+2. transform on Testing Data :The transform method applies the same transformation using 
+    the parameters (mean, standard deviation, etc.) computed during the training phase. 
+
+Why This Matters
+If you use fit_transform on both the training and testing data:
+The testing data's mean and standard deviation could be different from the training data's.
+This introduces data leakage and results in biased evaluation metrics.
+
+So,Use fit_transform only on training data to calculate the parameters (like mean, standard deviation, etc.).
+Use transform on testing data to apply the same transformation using the parameters from the training data.
