@@ -1,0 +1,57 @@
+Embeddings are vectors in higher dimension.
+And same vectors will have same meanings.
+These are numbers only. It gives words which are close in meaning nearly same numbers.
+There r 2 ways to create embeddings. 1. word2vec model, 2. Keras embeddings.
+Use keras embeddings, if u r creating NN model.
+otherwise u can go with word2vec model and then apply it on some ml  model.
+
+word2vec-- either use pre-trained embeddings or u can even train embeddings.
+The assumption of word2vec is The meaning of word changes depending on other 
+words in a sentence.  for eg data in I am a data scientist. I know AI.
+or war in world war,civil war, cold war.
+Now there r 2 types of algorithms in word2vec.
+CBOW and skip gram.
+CBOW is continuous Bag Of Words.
+SO By CBOW, on a sentence, I am a Data Scientist. I know AI
+so , if windowsize, vector size and wordcount are 
+hyperparameters that we need to decide. if windowsize=1, then 3 words pair
+containing I am a will be  created, then I and a will be a context and 
+am will be a target. so I and a will be a pair which is used to predict middle
+word on the basis of neighbouring words. 
+Then this window will slide and will contain am a data.
+so am and data will be used to predict a i.e. we can write this as--
+(I,a)->am
+(am,data)->a
+(a,scientist)->data
+(data,and)->Scientist
+In case the window size=2, 
+then total 5 words will used instead of 3 
+and middle word will be a target and rest will 
+be used as a context. 
+
+In pretrained embeddings, google has trained 3 billion tokens.
+So if u will give a particular word to this model, it will give the embedding.
+
+See word embeddigns.png
+Pretrained model is trined by Google.
+
+Now humain brain can visualize well till 3 dimensions x,y and z.
+But embeddings can be of 100 dimensions. Where same meaning words have 
+similar numbers.  
+
+Word2vec model can be trained with the help of CBOW - continuous bow
+and skip gram.
+Skip gram is kind of opposite of cbow.
+So here take as i/p middle word and o/p 
+neighbouring words based on i/p words.
+Now we r not storing frequency instead meaning 
+of am and I. 
+
+So we will try this with ML and DL (ANN) model.
+
+Lets suppose we have an email which contains text and we have classify whether this email is 
+spam or not. 
+In the next week u have to submit assignemnt of human vs horse assignemnts using cnn,
+
+
+ 
