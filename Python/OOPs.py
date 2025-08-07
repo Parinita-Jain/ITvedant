@@ -1,227 +1,231 @@
 '''
 def fly(n):
-    print(f"I am a {n}. I can fly.")
+    print(f"Hi ! I'm a {n}. I can fly")
 fly("bird")
-fly("lion")
-fly("fish")
+fly("crocodile")
+fly("donkey")
+'''
+#------------
+'''
+a=1
+b=2
+print(type(a))
+print(type(b))
+print(a/b)
+
+
+a='1'
+b='2'
+print(type(a))
+print(type(b))
+print(a/b)
+'''
+#-------------------------------
+'''
+class bird:
+    def prop(self,w,t):
+        self.wings=w
+        self.tail=t
+    def display(self):
+        print(f"""Hi ! Im a bird. I have {self.wings} wings ,
+                  tail {self.tail} cm""")
+    def fly(self):
+        print("I fly with my {self.wings} wings")
+
+crow=bird()
+#crow.prop("black",2)
+crow.display()
+crow.fly()
+print(crow.wings)
+print(crow.tail)
 '''
 #--------------------
 '''
-class person:
-    def walk(self):
-        print("I can walk")
-    def talk(self):
-        print("I can talk")
-obj1=person()
-obj1.walk()
-obj1.talk()
-print(type(obj1))
-'''
-#-----------------------
-''''
-class my_attributes:
-    class_attr="This is a class attribute"
-    def __init__(self):
-        self.instance_attr="I am an object attribute"
-
-obj1=my_attributes()
-print(obj1.class_attr)
-print(obj1.instance_attr)
-obj1.class_attr="I am a class attr"
-print(obj1.class_attr)
-obj1.instance_attr="Hi"
-print(obj1.instance_attr)
-
-print("------------")
-
-obj2=my_attributes()
-print(obj2.class_attr)
-print(obj2.instance_attr)
-obj2.instance_attr="Object2"
-print(obj2.instance_attr)
-
-print(obj1.instance_attr)
-print(obj2.instance_attr)
-
-'''
-#---------------
-'''
-class vehicle:
-    def __init__(self,n,b,t):
-        self.name=n
-        self.brand=b
-        self.type=t
+class bird:
+    def __init__(self,w,t):
+        self.wings=w
+        self.tail=t
     def display(self):
-        print(f"{self.name} {self.brand} {self.type}")
+        print(f"""Hi ! Im a bird. I have {self.wings} wings ,
+                  tail {self.tail} cm""")
+    def fly(self):
+        print("I fly with my {self.wings} wings")
 
-car=vehicle("bmw n4","bmw x5","land")
+crow=bird("black",2)
+#crow.prop("black",2)
+crow.display()
+crow.fly()
+print(crow.wings)
+print(crow.tail)
 
-ship=vehicle("cordelia","cruise","water")
-#ship.inp()
-car.display()
-ship.display()
-'''
-#-------------
-'''
-class expl:
-    def __init__(self):
-        print("By default call")
-    def hi(self):
-        print("call me")
 
-obj1=expl()
-obj1.hi()
-'''
-#------------------
-'''
-a=20
-b=30
-print(f"Before swapping {a} {b}")
-temp=a
-a=b
-b=temp
-print(f"After swapping {a} {b}")
-
-'''
-#------------------------
-'''
-a=20
-b=30
-print(f"Before swapping {a} {b}")
-b,a=a,b # tuple unpacking
-print(f"After swapping {a} {b}")
-
-'''
-#-------------------
-# 0, 1, 1,2,3,5,8,13,21
-'''
-a=0
-b=1
-n=9
-x=[0,1]
-for i in range(2,n):
-    s=a+b
-    x.append(s)
-    a=b
-    b=s
-print(x)
 '''
 #----------------------
 '''
-class expl:
-    def __init__(self): # constructor
-        print("By default call")
-    def hi(self):
-        print("call me")
-    def __del__(self): # destructor
-        print("Object is deleted")
+class student:
+    def __init__(self,i,n,m):
+        self.id=i
+        self.name=n
+        self.marks=m
+    def display(self):
+        print(f"{self.id} {self.name} {self.marks}")
+    
+a=student(1,"April",56)
+a.display()
 
-obj1=expl()
-obj1.hi()
-del obj1
-#obj1.hi()
+b=student(2,"Autumn",68)
+b.display()
+
+class employee:
+    def __init__(self,i,n,s):
+        self.id=i
+        self.name=n
+        self.salary=s
+    def display(self):
+        print(f"{self.id} {self.name} {self.salary}")
+    def __del__(self):
+        print("Hi ! I'm deleted")
+
+
+a=employee(1,"April",56000)
+a.display()
+
+b=employee(2,"Autumn",68000)
+b.display()
+del b
+b.display()
+
+#OOP __init__() __del__()
+# encapsulation inheritance
 '''
-#-----------------------
-#Inheritance
-# Single Inheritance
+#---------------------
+# single inheritance
 '''
-class GrandParent:
+
+class gp:
     def land(self):
-        print("Land")
-class Parent(GrandParent):
+        print("I have 1000 acres of land. I will give to my children.")
+
+class f(gp): # inheritance
     pass
-
-obj1=Parent()
-obj1.land()
+    
+obj=f()
+obj.land()
 '''
-#--------------------
+#---------------
+# Multilevel inheritance
 '''
-#Multilevel Inheritance
-class GrandParent:
+class gp:
     def land(self):
-        print("Land")
-class Parent(GrandParent):
-    def ferrari(self):
-        print("ferrari")
+        print("I have 1000 acres of land. I will give to my children.")
 
-class U(Parent):
-    def DubaiPlot(self):
-        print("Dubai Plot")
-
-obj1=Parent()
-obj1.land()
-obj1.ferrari()
-happy=U()
-happy.land()
-happy.ferrari()
-happy.DubaiPlot()
+class f(gp): # inheritance
+    def dubai_flat(self):
+        print("I have flat in dubai. I will give to my children.")
+        
+class u(f):
+    pass
+obj=u()
+obj.land()
+obj.dubai_flat()
 '''
-#------------------------
+#-------------------------------
+# multiple inheritance
 '''
-# Multiple Inheritance
 class father:
     def land(self):
         print("Father's land")
-        
 class mother:
     def land(self):
         print("Mother's land")
-
 class u(father,mother):
     def land(self):
-        #super().land() # method overriding
-        father.land(self)
+        #super().land()#Method resolution order(MRO),
+        #this will call father first
+        father.land(self) # explicit method call
         mother.land(self)
-        print("Happy's land")
-   
-
-happy=u()
-happy.land()
-'''   
-#-------------------
+        print("Proudly my land")
+obj=u()
+obj.land()
+    
 '''
-from abc import ABC,abstractmethod
-class animal(ABC):
-    @abstractmethod
-    def sound(self):
-        pass
-    def hi(self):
-        print(hi)
-class elephant(animal):
-    def sound(self):
-        print("Trumpet")
-class horse(animal):
-    def sound(self):
+#-------------------------------
+# polymorphism
+'''
+class animals:
+    def make_sound(self):
+        print("Generic Sound")
+
+class cat(animals):
+    def make_sound(self):
+        print("Meow")
+    
+class horse(animals):
+    def make_sound(self):
         print("Neigh")
 
+l=[animals(),cat(),horse()] # method overriding happening at runtime
+for i in l:
+    i.make_sound()
+'''
+#---------------
+'''
+# Abstraction - Abstract Base Class (ABCs) , abc module
+# @abstractmethod decorator
 
-e=elephant()
-e.sound()
-h=horse()
-h.sound()
-#a=animal() -- error
+from abc import ABC,abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        #print("Animals make sound.")
+        pass
+class horse(Animal):
+    def sound(self):
+        #Animal.sound(self)
+        return "Neigh"
+class cat(Animal):
+    def sound(self):
+        return "Meow"
+class elephant(Animal):
+    def sound(self):
+        return "Trumpet"
+
+l=[cat(),horse(),elephant()] 
+for i in l:
+    print(i.sound())
+
 '''
 #--------------------------
-#------------- class/static attributes and static methods
 '''
-class calculator:
-    pi=3.14 # class attribute / static attribute
+class area:
+    pi=3.14 # class attribute/ststic attribute shared among all objects of class
     def __init__(self,r):
-        # object attributes
         self.radius=r
-    def display(self):
-        print(calculator.pi*self.radius**2)
-    @staticmethod
-    def class_method():
-        print(8*9)
+    def ar_cal(self):
+        ar=area.pi*self.radius
+        return ar
+    def display(self,ar):
+        print(f"The area is : ",ar)
 
-circle=calculator(5)
-print(circle.radius)
-circle.display()
-print(calculator.pi)
-calculator.class_method()
+a=area(2)
+ar=a.ar_cal()
+a.display(ar)
+'''
+#--------------------------
+'''
+# access modifiers in python 
+class person:
+    def __init__(self,n):
+        self.__name=n # private attribute
+    def display_name(self):
+        print(f"Hello {self.__name}")
+p=person("April")
+p.display_name()
+# p.__name
 
 '''
+#-----------------------------
 
 
 
@@ -233,44 +237,6 @@ calculator.class_method()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 
 

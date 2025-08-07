@@ -1,1 +1,5 @@
-Hi this is a read+ mode with with Some chnages something
+Hi ! This is read mode with with.
+Hello
+Good Morning
+How Are you?
+All good !

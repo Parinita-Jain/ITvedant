@@ -1,8 +1,8 @@
-def add(a,b):
-    return a+b
-def sub(a,b):
-    return a-b
-def mul(a,b):
-    return a*b
-def div(a,b):
-    return a//b
+def add(x,y):
+    return x+y
+def sub(x,y):
+    return x-y
+def mul(x,y):
+    return x*y
+def div(x,y):
+    return x/y
