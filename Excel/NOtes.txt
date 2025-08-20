@@ -1,0 +1,2225 @@
+######################################33
+1. Introduction - formatting,Excel Cell operation to Share, Excel formula,Excel Referencing,Paste Special.
+2. Functions -- 1,2,3,4,5,6,7,8,9,10,
+3. Visualization -- VisualizationDatasetToShare
+4. Data Table Validation and Dashboard -- Data Tables example, Data Validation, Sales_Practice_min_raw_to_share , taught macros and AI here only.
+########################################
+Data isgenerated everywhere and everyday, data is generated at an unprecedented pace.Now,how to analyze this amount of data?It is the gototoolinindustry 
+to analyze data.  Finnce,Marketing,Sales,Analytics and Data Science.Excelis usedto crunch data, wrangle data,manipulate data and do analysis to preent toclients,
+stakeholders,teammates and soon. In a personalsapce, u can use excel tounderstand your expenses,tax calc, sports analysis,etc.
+Now, we should use excel to explore, to analyze,to present analysis tothe audience
+
+NOw,ecel as a standalone tool is excellent but how to combine that with the business angle?i.e business sense + excel= Mastering excel.
+Now, when wewill go through the subject, u have to think how you can combine your learning with the your domain.
+
+
+excel installation---
+
+https://www.youtube.com/watch?v=CuCRyvh2t18
+
+
+Starting excel journey----
+
+excel-->blank workbook---> we get excel sheet.
+It by default opens book1,book2,etc
+
+Diff components ofsql--book1 isthe name of the excel workbook that we are working with.
+At the top we have ribbion.
+Quickaccess toolbar at the top with autosave,undo,redo,etc.
+name box displays the name of the active cell. lets say if we will clickon e5,then that will be reflected here.
+then we have formula bar.So whenever we type anything in active cell letssay "Excel" ,that will be reflectedin the formula bar.
+Then we have grids.We have rows and colshere. Rows denotedby 1,2,3,4,5 etc and cols by alphabets like a,b,c,d,e,f,g.Cell is the lowest unit in grid.
+This sheet which we see is called excel worksheet.U can have multiple sheetslike sheet1,sheet2.Form an overview we can say that excel workbook contains excel sheet.
+Each worksheet has a vertical and horizontal scrollbar.
+View bar --  below right corner which offer diff views that u can toggle around with.Zoom option to zoomin and out.Autosave feature-- u need to be signed in to utilize
+this.
+
+Now,coming to ribbion. Ribbion contains multiple tabs.-file,home,insert,page layout,formulas,etc
+
+In the home tag ,u have access to some of the most commonly used cmds.fonts,alignmnets,no.format,conditionalformatting,filter options,etc.
+
+Under insert tab-- u have things like pivot tables,charts,illustarations,etc.
+
+page layout--u have orientations basically how the page should look
+
+then,formulas tab--this offers formulas that we canimagine.
+
+under data tab--things like transforming data or getting orimporting data in excel.Uhave queries and connections with databases.Even u have the forecast tab.
+
+reviewtab--spell check, accessibility option,lang cmds,notesand so on.also the critical security part of your excel sheet.
+
+view tab-- diff views that u can use in excel.like removing gridlines,zoomin and zoomout the content.Freezing panes--like when we have alot of data, and we have headers
+in the top and while scrollingdown,those headers can get lost in the top,so u can frreze rows,or cols,accr do need.
+
+Now,ribbion is useful, still its taking lots of space in our screen.SO todo this,just double click on any of the tabs that u have. U can also do this with up arrow..
+in top rigt .clickon the 3 dots and uwill get.
+
+Keyboard shortcuts--alt key is ur friend. Just press alt on keyboard,there are bunch of letters coming out. These represents that tabs in ur excel notebook.
+
+alt+H home tab
+lets say conditional formatting,ten alt+H+L--then just use the arrow key to toggle between the 2. 
+
+alt+R for recommeded charts.
+
+quick access tool bar--which contains auto save, redo,undo,etc, contains ,u can add any cmd from any of these tabs here.
+---just goto conditional formatting---right click---add to quick access toolbar.
+and if u want to remove,then right click on the added icon---remove from quick access toolbar.
+
+
+ctrl+N for new doc.
+ctrl+o to open an existing doc.
+ctrl+s for saving the doc.
+ctrl+p for printig
+U get all these options in file option too.like the backdoor entry to excel.
+
+How to print excel data-- file--->print--> and u will get print interface. or ctrl+p
+u can add your printer name to printer.then settings-->print active sheets,print entire workbook or print selection (like to print first 10 rows in my worksheet 
+in my workbook)--
+collated is the sequence on which u want to print your sheets, orientation-portrait,landscape
+
+now,how to get data intothe same sheet--for eg-- entire colson one page and single col on next page---- so for such cases we have 2 options--
+settings--->noscaling---> fit sheet on one page------------------but this might squeeze the cols. So,what u cn dois--
+do no scaling again----then click on show margin
+on right corner below. 
+
+NOw,if u want to print couple of sheets together .. then.... keep pressing ctrl on your keyboard---->
+select sheets ---->press p---->and u can play with the margins.
+
+Now,lets say I want totake out printout ofonly 1st 10 rowsofmy sheet,then----->select 1st 10observations--press ctrlp---->printere  
+
+How to print titles when rows goes into multiple pages?---headers come in thefirst pagebut are missing from other pages.
+---page layout---->print titles---->
+rows to repeat at top---click on the box--- and then click on the 1st row i.e. header in the excel file.
+let'ssay we want to freeze col then what to do?
+--
+right click pn ribbion-- customize ribbion--add group--
+
+covid-us--
+rows--yy-mm -- values-- sum of positive, negative
+cols- states names
+
+calc field-- is between two fields.
+when we create new field using 2 or more than 2 fields, then it is a calc field.
+calc items--
+content of a col is item.
+
+
+
+
+
+
+------------------
+Cell formatting----
+In excel ,we have multiple optoins to change the look of a cell--like--- font face/color/style/size,number format,alignment ,merge,wrap test,cell backgroung color,
+cell border style,height and width---------------all of these can be done by hometab or ctrl+1 together.
+
+3.1--formatting.xlsx---
+1.for making bold---1.click on the cell + B(home tab) or ctrl+B or ctrl+1--->font--->bold
+2.tochange color to red--->select cell--->home--->clickdrop down--->select red 
+3.to change font size--dofont size--16.
+
+2-Change the number format to two decimal positions and format it to currency	
+1234.7890
+home-->click derease decimal.
+and to format it to currency,--ctrl+1---->number--->currency--->selet currency u want.
+
+3. Merge Cell and deal with long strings to accomodate in a cell
+Hello World ! This is a course tostudy Excel----------- lets say I write this sentence on some cell.Then--select all these cells--by left click of mouse--->
+then click on home page---->merrgeand center-->But this is not a proper format becuse text is getting cut---so do home---wrap text---for row height fixing--->
+clickon cell-- rigt click--->row heigt-->put some value.
+
+4. Change the border color, border thickness and fill color in background of the cells.											
+just select the cell--->home--->next tofont---bottom border--->top and bottom border----------->u can even change the line color---lets say red--put that on the
+cell border---- u can choose line thickness from line style. Now,to fill color in the cell---goto home--->fill color---->yellow
+
+---Sheet formatting------
+change theme, insert background image,hide/unhide row and col index,hide/unhide sheet tab
+
+in excel file--goto sheet---
+1.select change theme of sheet-----page layout----themes---and select any theme
+2.insert background image---page layout---->background---->select the picture--->this will be the background
+3.hide sheet tabs
+4. and hide row and col index---file----->options---->advanced---->untick show sheet tabsand show row and col headers.-------------u can also do this by going to
+viewtab-------->untick headings
+
+Different cell operations that excel offers--Select cut copy paste---------------------
+
+Go tothe data sheet---
+
+1. Select cell/ group of cells (Range)
+hover your mouse and select a cell--that is the active cell.
+now,selecting multiplecells---select a cell  in acol------>left click on cell---->drag down---------------------or by keyboard shift and down arrow.
+Toselect entire row,of a col---shift+ctrl+down arrow---------------------shift+ctrl+right arrow
+
+selecting multile entries is called a range.
+
+2. Enter/ Modify Content of cell
+data---- lets say i  type---Excel is awesome in some cell. To modify it,just goto the cell--->doubleclick---and u will get the content in formulabar.---now instead
+of awesome-- i want Excel is quite useful --->make change on the formula bar--done---
+
+3. Copy and Move Cell(s) content---select the active cell--press ctrlC --- tocopy on morethan 1 cell---->select the cell-->shift+down--->ctrl+v.
+to move content--ctrl X+ctrl v
+
+4. Automatic filling cell content
+put in a new cell--header name--flag--put x in one cell drag +sign down-------- thisis autofill
+apart fromthis lets say,we put 1 and 2 in cells--select both ofthem by shift--drag down or double click.
+put AV001----shift-drag down or double click
+
+flash fill--excel 2013 onwards---new colnamme-- Last Name--->Kumar in 1st cell--press B --->and u will get list oflast names.--press enter
+
+
+5. Find and Replace cell content----finding HR--ctrl F---sales---
+for replacement--ctrl f---Manpower---replace all
+
+for advanced options--ctrlf--->options----->
+
+6. Delete cell, row and column
+
+
+7. Insert cell, row and column
+home---->insert--->insert cells
+to insert entire row----> lets say before 8--->click 8 no. on cell--->right click--->insert, key shortcut----- shift and select entire row-shift ctrl +
+toinsert col---clickon the col before which u want to insert--->right click-->insert,key===ctrl+spacebar toselect entire col--->shift+ctrl++
+
+for multiple rows--select col-->shift + right arrow key...select the cols---then shift+ctrl++
+To delete cols--- select col--ctrl del
+
+8. Hide/Unhide row and column
+select name,department---right click---hide or---hometab--format---hide and unhide....lly,for hiding row.
+
+
+9. Adjust height and widht of row and column
+
+Now, to rename press alt o,h,r
+
+---------------Excel formulas---------------
+
+Excel formula is a combination of operators,operands and functions and it returns o/p.
+e.g. SUM(D5:D7)+24*7----------->sum is a func,+ operator,24*7 operand
+
+formula begins with = sign
+formulas are entries  that have an eqn to calc the value to display
+formula o/p changes with change in i/p
+it can be copied from 1 cell to another
+all basic mathematical op can be performed with excel
+with use of funcs,we can generate multiple types of ops using excel formula like statistical,financial,string,date,etc
+
+4.1-------------
+
+excel formulas---
+Payout=Basic+Allowance+TA
+so how we will write this---
+make a new col-- payout------->in one of the cell write =SUM()--select cells of basic,allowane and da enter
+
+Now,lets say we want total sum of basic---->in the last cell---=sum(------>select from 1st cell of basic +shift down--select all the cells enter
+
+now, from grand total rows drag mouse till payout
+
+Excel has 2 kinds of operators---1. mathematical2.comparison operators.
+
+order of operators--1.parenthesis2.order precedence rule of mathematics 3. when 2 items have same precedence,excel works left to right.
+
+eg. (2+3)*3*3+5*3
+
+Referencing----A cell to which anther cell refers. 
+3 types---
+1. Relative--relative refrencing means that the cell address changes as you copy it. i.e. the cell reference is relativetoits locatio.
+2. Absolute--it doesnot change while copying it.
+3. Mixed--it changes either the row or the col when u copy.
+
+4.2--excel cel references------------ 
+
+put = in payout(after increment)-------->click on F5-->put+--->click on F5 again--->*--->G5 i.e. F5+F5*G5---------->once the value appear -->strech it down
+This is relative cell ref as cell address is changing wrt position.
+
+Now,if we copy and paste this formula---i.e. clickon H5 containing value 8444 and paste it to some other cell---then the value is coming out to be 0.
+To avoid this situation ,weuse absolute ref---lets say we want tocalc bonus for each employee in a company--- 
+so,bous---H5*E2= enter------------stretch down---------emp2 has nobonus at all.,error for 3rd emp and absolute values for rest of the employees.
+
+So, right now, exceltook this as a relative cell ref--So,it has taken E3 which has no value, E4 --has no value--and after that it is taking TA into consideration.
+So,in formula bar use $ sign and freeze allthe formula bars.And then drag it down--i.e. =$H$5*$E$2
+
+Only E2 has tobe frozen.Not H5.------------=$H5*$E$2
+
+Now,lets say a company is giving a fixed bonus of 1000 rupees. then creaea col Total  
+
+											
+	Bonus given to each employee	10%					Fixed Bonus		1000			
+											
+	Emp_ID	Basic	Allowance1	TA	Payout	% Increment	Payout (After Increment)	Bonus	Total		
+	A001	6565	525	657	7747	9%			8444				844	9444		
+	A002	6090	487	609	7186	8%			7761				776	8761		
+	A003	5922	474	592	6988	5%			7337				734	8337		
+	A004	6972	558	697	8227	8%			8885				889	9885		9885
+	A005	6048	484	605	7137	7%			7636				764	8636		
+	A006	5768	461	577	6806	8%			7351				735	8351		
+	A007	5047	404	505	5955	6%			6313				631	7313		
+	A008	6647	532	665	7843	9%			8549				855	9549		
+	A009	5330	426	533	6289	8%			6793				679	7793		
+	A010	6670	534	667	7871	7%			8422				842	9422		
+											
+Paste special and format painter----
+Just select 1 value--- press alt+E+S------------
+
+alt ES and select format-----or select col width--- put 2 in sme cell--->4 after that--->select 4-->altES-->add
+
+Now,lets say i want to copy the col total payout into rows--->select total payput col--ctrlc---->select cell--->alt e s--->values--->transpose
+
+format painter---select row----->color it yellow--->select this complete row--->click on brush --->select row in table to color.
+select the rows----double click on painter---->select the rows in table.
+
+
+Datetime and text functions----
+Now, date and today 
+
+1_Date_Time_function.xlsx----
+current date time-------------------------
+=NOW() enter
+
+=TODAY() enter
+
+Then if we have diff nos ,in diff cols---select 1 cell---select =date(---------just press ctrl and select 2020 4 2 enter
+
+extract info-----------------------------
+=year(select cell b2 which has date)
+=month(select cell b2 which has date)
+=day(select cell b2 which has date)
+=minute(select cell b2 which has date)
+=second(select cell b2 which has date)
+=weeknum(select cell b2 which has date)
+=weekday(select cell b2 which has date)
+=year(select cell b2 which has date)
+
+manipulation--------------------------------------------------
+putting last day of month---------
+=eomonth(C2,0)
+
+to get last day for following month----
+=eomonth(C2,1)
+
+toget previous month----------
+=eomonth(C2,-1)
+
+to get datedif---------in vintage(year)
+=DATEDIF(C2,TODAY(),"Y")
+
+to get the business days----,i.e. removing weekends---
+=NETWORKDAYS(G3,H3)
+
+now,if u have list of holidays, then----
+=NETWORKDAYS(G3,H3)---on the formula bar,put comma after that just select list by shift
+=NETWORKDAYS(G3,H3,L3:L5)--------
+
+Left,Right,Mid,Len,Concatenate-----these are some text functions----
+
+left(),right(),mid()-----these are used to extract characters from beginning,end or a given position of a string.
+
+left(string,number of characters)
+
+rigth(string,number of characters)
+
+mid(string,from position,number of characters) -------------------Space is also counted  as character
+
+1.1_Text_Functions[Protected view]--
+=LEFT(D4,4)
+=RIGHT(D4,5)
+=MID(D4,5,6)
+=len(D4)
+=CONCATenate(D4,G4)-------right click , format cells,text,alignment,wraptext---ok
+
+u can even use &-----
+=D4&" "&G4
+
+find()/search()-------these returns position of a search string in a string
+find is case sensitive, search is not.
+find(search string,string[,from position])-----from position is optional.by default func searches the string from the beginning. 
+
+1.2.xlsx--------------------------
+=FIND("Python",E4)-----------------------case sensitive and gives index from where text is starting
+#value is the error.
+
+=FIND("Machine Learning",E4)-------giving error -- because l is lower in E4
+so,
+=FIND("Machine learning",E4)
+
+=SEARCH("Deep Learning",E4)----------gives case insensitive o/p
+
+=SEARCH("Tableau",E4,34)-------------------=FIND(F$3,$E4)
+
+=Upper()
+
+=lower()
+
+=proper()
+
+replace and substitute---------------------
+
+replace given characters fromspecifiedposition from a string with new substring
+syntax--- replace(string,from position,no.of character,new string)
+
+substitute---replace old string from a string with new substring for given occurence. By default it replace the first occurence.
+substitute(string,old string,new string,[instance])
+
+1.3 text functions---------just copy the math function sheet and rename to text function--- create 2 cols substitute and replace
+
+now,lets say we need to convert .com to .org---
+=SUBSTITUTE(E4,".com",".org")
+
+we have Anil Kumar
+
+=SUBSTITUTE(D4,"Kumar","Sharma")
+
+we have sunil kumar verma verma----- i want sunil kumar verma kumar
+
+=SUBSTITUTE(D20,"verma","kumar",2)
+
+replacing xyz.org by abc.org---=REPLACE(K4,6,3,"abc")-----------all errorful result---
+strategy is-- first we will use find func to locate @,then locate .org--the domain is between these two.
+so make new cols---position of @,position of .org,replace new 
+
+=FIND("@",K4)-----------stretch them all
+=FIND(".org",K4)-----------stretch them all
+=REPLACE(E4,1,4,"Amit")
+
+username=====  =LEFT(E4,FIND("@",E4,1)-1)
+domain name===  =RIGHT(E4,LEN(E4)-FIND("@",E4,1))
+
+text and value----------------------------------1.3_text functions(text and value)
+text--converts no.tothe given format.It is used to deal with text o/p that is not in the user's preferred format.text(number,text format)
+
+="This Report is as of "& TEXT(A1,"DD-MMM-YY")
+=Today is "&TEXT (TODAY (),"DD-MMM-YY") --------------------- 
+value()--converts a text strig toa no. where text string must represent a no.
+value(string) 
+
+
+Project Exercise----
+=LEFT(A4,FIND(" ",A4)-1)
+
+=SUBSTITUTE(A12,"AA","DD",2)
+
+=REPLACE(A12,FIND("_",A12)+1,2,"HH")
+
+=VALUE(A20)
+
+="Total Sales is ₹ "&I18          or    ="Total Sales is "&TEXT(A20,"$#,##0.00")
+
+Mathematical Functions------------------------
+sum,prod,round,sumifs,sqrt,etc
+
+1_Maths_Functions_
+Calc total payput=pay per hrs * no.of hours
+ then show sumproduct()
+
+This wecan also do it like--
+=I4*H4 
+
+then why using product?---because in case oflage data,it becomes difficult to maually enter all values.
+
+=SUM(J4:J18)==7417.29
+
+=MOD(12,5)
+
+=FACT(4)
+
+int,round,round up,round down,ceiling,floor
+
+695.25=INT(J4)=695
+
+398.75=ROUND(J5,1)------398.8
+
+387.25=ROUNDUP(J7,1)----387.3
+
+595.76=ROUNDDOWN(J10,1)-----595.7
+
+ceiling---round off tothe nearest multiple----
+
+444.85=CEILING(J11,5)-----445----next multiple of 5
+
+696.8=FLOOR(J14,5)-----695----- previous multipleof 5
+
+Sumifs---it is used toadd value based on 1 ormore conditions
+
+sumifs(sum range,criteria range1,criteria 1, criteria range2,criteria 2......)
+
+----unhide the cols---
+
+cal totalpayout of male emps---
+=SUMIFS(J4:J18,F4:F18,"Male")--------select all the values of total payout--j4:j18----then ----select gender--f4:f18-----wite gender Male
+
+cal totalpayout of male emps of dept support---
+=SUMIFS(J4:J18,F4:F18,"Male",G4:G18,"Support")
+
+=SUMIFS(J4:J18,F4:F18,"Female",H4:H18,">15")
+
+################################ do not---in folder 4
+maxifs--------------------------returns the maxi value among cells ,given by certain set of conditions or criteria.
+=MAXIFS(H4:H18,F4:F18,F4)
+minifs-------
+
+=ROUND(AVERAGEIFS(J4:J18,F4:F18,K20),2)
+Financial func------
+
+present value and future values----to calc financial products like loans,return rate,savings,etc--
+some common financial funcs are--npv--net present value,irr--internal rate of return,fv- future value,,etc
+how to derive monthly payment against a loan,future value against equal monthly savings,rate ofinterest,etc
+
+lets say in 2023---present value--pv--1000 rs
+2026----future value--fv----1000rs---
+lets say u invest 1000 rs in bank at an interest rate of 5%, then what will be fv of 1000 rs,at a rate of 5%.
+so using 5% rate,im getting 50 rs back--so at the end of 3 years,the fv will be 1150.
+This is the eg of simple interest.
+
+But real world doesnt work like that---
+if my pv is 1000,rate 5%,i get 1050 by the end ofthe year.
+now,investing 1050 gives return of 1052.5
+which investing again--1102.5 gives return of--fv of 55.13---giving a total of---1157
+
+__________________________________________By Sagar_____________________________________
+
+						
+	
+
+Project 2				Discount rate	10%
+		Machine 1		Machine 2	
+	Year	Cash Flows	PV of Cash Flows	Cash Flows	PV of Cash Flows
+	Initial Investment	-100000		-100000	
+	1	30000	27273	40000	36364
+	2	30000	24793	30000	24793
+	3	20000	15026	30000	22539
+	4	20000	13660	20000	13660
+	5	20000	12418	10000	6209
+	6	20000	11289	10000	5645
+	Sum of PV		104461		109211
+	NPV (Calc)		4461		9211
+	NPV (Formula)	4461		9211	
+	IRR	12%		14%	
+			
+1st machine inflows==C19/((1+$F$15)^B19)--------------discounting formula because it is giving us +nt value
+2nd machine inflows= =E19/((1+$F$15)^B19)
+sum of pv1st =SUM(D19:D24)-----------104461
+
+sum of pv 2nd =SUM(F19:F24)----------109211
+
+NPV(calc) =D25+C18--------4461
+NPV(calc) ==F25+E18------9211
+
+NPV(Formula) ==NPV(F15,C19:C24)+C18-----4461
+NPV(Formula) ===NPV(F15,E19:E24)+E18-----9211
+
+IRR =IRR(C18:C24)
+
+=IRR(E18:E24)
+
+
+
+_______________________________________________________________________________________
+
+This is an eg of compound interest.  
+
+fv=pv*(1+interest_rate_per_period)^no.of payment period
+
+NPV and IRR----should we invest or not?----
+
+pv=fv/(1+discount_rate_per_period)^no.of payment period
+
+npv--net present value----represents the net cash flows throughtout a project's lifecycle discounted today.
+
+if npv is +ve then investmnet is good,otherwise bad
+
+------------9_financial_function.xlsx------
+=C5-D5-------------------
+NPV_IRR --sheet name (IRR is internal rate of return)
+
+=E6/POWER((1+$C$2),B6)-------------------------------present value
+
+
+net +nt value=sum(F5:F10)
+
+formua for npv=NPV(C2,E6:E10)+E5
+IRR--internal rate of return--this is a discount rate that makes sum of npv from a particular project equal to 0. 
+
+NPV=initial investment today+9000/(1+discounted_rate)^1+ 9000/(1+discounted_rate)^2+9000/(1+discounted_rate)^3+9000/(1+discounted_rate)^4+9000/(1+discounted_rate)^5
+
+So,IRR gives us the discounted rate and make NPV zero.
+
+The higher the projects IRR, the more desirable it is.
+
+it is internal,because it doesnot take into consideration external factors like inflation
+
+=IRR(E5:E10)==8%
+
+Financial functions in excel----
+PMT--return periodic payment----PMT(RATE,NPER,PV[,FV][,TYPE])
+Rate---returns interest rate per period----RATE(NPER,PMT,PV,[,FV][,TYPE])
+NPER---returns no.of periods----RATE(PMT,NPER,PV,[,FV][,TYPE])
+FV-- returns future value of an investment.FV(RATE,NPER,PV[,PV][,TYPE])
+PV---returns present value of an investment--PV(RATE,NPER,PV[,FV][,TYPE])
+
+PMT------
+We are buying car value of $16000 at 10% yearly rate of interest for 5 years.So after 5 years, the future value will become 0. So, PMT--------
+1st way--- formulas tab---financial----pmt----
+
+=PMT(C4/12,C5*12,C3,0,0)-----------c4 gives interest rate,no. of years=c5*12 for 12 months,c3 gives present value,future value=0,[type] for now is 0.
+
+This is -ve ,means its going from your pocket.
+
+rate,no.of years--------
+
+=pmt(B13,C12,C3)
+so we want tis per month, so B13/12 and C12*12
+
+now,we cannot just stretch out,so, freezing rate first $B13,then freezing no. of years--c$12, then freezing entire value--C3---$C$3-------
+now,drag this  value around rows and cols.
+
+Monthly Investment----
+i have a monthly saving plan of 6000 rupees for 10 years--and it has an interest rate of 10%.So what will be the fv?--=C5*POWER((1+$D$2),$B$14-B5+1)
+
+or---=FV(J5,J6,-J4,0,1)------ -J4 bcoz money is going from our pocket.
+
+LookUp function----
+
+First Insurance---
+who are the customers who buy your products?
+which customers buy what kind of products?
+
+Existing data is available in 3 different datasets.
+1st dataset has policy details---2nd dataset has customer details---3.product details------
+
+customer id u can take reference from customer details.
+
+product id is taken from product details.
+
+=vlookup(lookup_value,table_array,col_index_num,[range_lookup])
+=hlookup(lookup_value,table_array,col_index_num,[range_lookup])
+
+where, lookup_value is the value to search in the first col of the reference table
+table_array is the reference table
+col_index_num is the col num u want to pickup from the reference table.
+range_lookup should be set to 0 for the purpose of this course.
+
+We have 2 tables---table A and table B--
+
+joining policy details with customer details through policy details----
+=VLOOKUP(A3,$K$3:$P$14,2,0)
+=VLOOKUP(A3,$K$3:$P$14,3,0)
+
+product type-----
+=HLOOKUP(C3,$B$17:$E$18,2,0)
+
+Match---------
+to return the relative position of value in a table range.
+to ref a cell based on row and col no. of table range.
+to access a cell based on cell ref i/p as a string
+how toexpand the cell/range ormove it by given row or col
+how to lookup values from left of search col
+
+match(lookup value , lookup array[,MatchType])
+
+Here match type canbe---
+-1 (match with exact or higher value )
+0 match with exact value
+1 match with exact or lower value
+
+it becomes morepowerful when it gets combined with index func.
+
+it is quite similar tovlookup.Just vlookup returns corresponding value against the search value,where as match returns the position of the search value.
+
+Match is not case sensitive.
+
+7_index_match---
+
+Lets say we want to know joining for a couple of employees A004,A006---------
+what is the lookup value----its employee code,table array is complete starting 2 cols,we are going to freeze them, because we will be using this formula for
+the next employee also.
+
+=VLOOKUP(G7,$B$4:$C$18,2,0)
+
+Next,lets say we want to find positionof these emps in the table range.
+Match,our lookup value is emp code in small table,lookup array is complete employee code big table,
+
+=MATCH(G7,$B$4:$B$18,0)
+
+Now,we want to find position of these lookup values in the range1 table.
+If the exact match is not found then return the next higher no..
+
+=MATCH(M6,K6:K14,-1)----- it looked for 5,but because 5is not there, it returned 15, which isin position 8.
+but we didnt freeze the value , sowe got error.
+
+for getting lower no.--- ur range2 must be sorted in ascending order.
+=MATCH(V6,$T$6:$T$14,1)
+
+Index func--------------lookup and ref extetion----
+It is used to return a value or refrence for intersection of given row and col no. of a table range
+syntax---index(table range,row no.,col no.)
+
+It becomes more powerful when u combine it with other functions such as match func.
+
+index1 sheet---
+index(referencing to entire range--freeze that inplace,row no. 4, col no.2)== INDEX($B$3:$D$9,4,2)
+
+index2 sheet---
+slightly advanced index option---
+here we will be looking at values from the left ofour field with the index in the match func. Here we want to return name of the emp based on the emp code.
+The name field is to the left of the emp code so we cant use vlookup here. So we will first use match func first tofind the position of the emp code in this range 
+and then we will use the index func to extract the name based on the empcode.
+
+=MATCH(G3,$C$3:$C$12,0)
+
+=index(we want names right,so select names col values, row no.will be given by position, colno--its just 1 col so put 1there.This 1 is name col number
+=@INDEX($B$3:$B$12,H3,1)
+
+Now, both functions must have similar height or width if u r finding the row no, and col no.
+
+Logical and error function--
+And,or not--
+
+3.1 Logical Error Functions----
+
+Females who belong to admin department
+=AND(B3="Female",C3="Admin")--------------drag down
+
+or ---either gender female or wrking in admin department---
+=OR(B3="Female",C3="Admin")
+
+If you want toget a no. instead of true or false then * by 1---i.e. =OR(B3="Female",C3="Admin")*1
+lets say not of col And---
+
+error handling functions---iserror,isnumber,istext,isblank------if error is there , return true otherwise returns false
+
+=ISERROR(G3)---drag it down
+
+=ISNUMBER(G3:G17)
+
+=ISTEXT(C3:C17)
+
+=ISBLANK(D3)
+
+if---- if(condition,True stmt,False stmt)
+
+iferror--------iferror(value,value_if_error)------returns a value u specify if a formula evaluates to an error,otherwise returns the result of the formula
+
+Now,lets say we want to give bonus of 100 to employees who have finished 15 hrs of working.
+
+=IF(D3>15,100,0)
+
+bonusof 200 based on 100% achievemnt on working hrs.---%ach is col G here
+
+=IF(G3>100%,200,0)
+
+Now,when someone doesnot have any target,i.e. 0,then we will consider personal ach as 100%-----if(actulno ofhrs/target no of hrs)---if it giveserror,
+we want to give 100%
+
+Nested if---if no. of hours<10 then no work --if no of hrs<20--some work otherwise good work
+  =IF(E3<10,"No work",IF(E3<20,"Some work","Good work"))
+
+
+
+if they are from admin or sales the give working hours otherwise 0.
+=IF(OR(C3="Admin",C3="Sales"),E3,0)
+
+Statistical functions-- like avg,min,max,stddev,countifs,count,etc
+how to generate statisticalinfrences about data table?
+how tocount value in a datatable based on 1 or moremultiple criterion?
+how to calc avg of numericalvalue based on based on single ormultiple criterion?
+
+min--returns smallest value  from a list of supplied nos.
+max-========max=========================================
+large-returns kth largest value from a list of supplied nos. ,for a given value k--large(data table,k)
+small-returns kth smallest value from a list of supplied nos. ,for a given value k--small
+
+4.1---statistical function-----
+=MIN(F2:F16)
+
+=MAX(F2:F16)
+
+=SMALL(F2:F16,3)
+
+==LARGE(F2:F16,2)
+
+How many employees are below 2nd largest value?--forthis we need count functions---
+count-returns noof numerical values in a supplied set of cells or values ,
+countA-returns no of nonblanks in  supplied set  of cells or values,
+countblank--returns no of blank cells in a supplied range
+countifs--returns no of cells that satisfy a set of given criteria
+
+=COUNT(A2:A16)------but its giving 0, because A2-A16 contains string value, and count works on numerical value.-- =countA(
+=COUNTIFS(D2:D16,"Male")
+=COUNTIFS(D2:D16,"Male",E2:E16,"Admin")
+=COUNTIFS(D2:D16,"Male",E2:E16,"Admin",F2:F16,">15")
+=COUNTIFS(F2:F16,"<"&LARGE(F2:F16,6))
+
+Mean,median,mode,std dev,corr---
+average,averageifs---calcs avg of cells in a supplied range that satisy multiple criteria,
+mode.sngl--this is mode single , we alsohave mode multiple but we will study mode single .mode of a list ofsupplied nos,median--median of a list ofsupplied nos
+
+4.2 statistical_function----
+
+=AVERAGE(F2:F16)
+
+
+=median(F2:F16)
+
+=mode(G2:G16)
+
+=AVERAGEIFS(F2:F16,D2:D16,"Male")
+
+=AVERAGEIFS(F2:F16,D2:D16,"Male",E2:E16,"Admin")
+
+stdev.p/stdev.s---returns the std dev of a supplied set of values(which represent a sample of a population)--stdev(number1,number2...)
+quartile--returns the specified quartile of a set of supplied nos.---quartile(data table,quartile)
+rank--returns the rankof a given value,within a supplied array of values--rank(number,data array[,order])
+correl---retruns the corr betw 2 cols/features (numeric values)--- correl(array1,array2)
+
+https://www.analyticsvidhya.com/blog/2015/06/correlation-common-questions/
+
+https://www.analyticsvidhya.com/blog/2015/10/inferential-descriptive-statistics-beginners-r/
+
+range of no. of hrs==MAX(F2:F16)-MIN(F2:F16)
+
+=QUARTILE(F2:F16,1)
+
+=QUARTILE(F2:F16,2)
+
+=STDEV(F2:F16)
+
+=CORREL(G2:G16,H2:H16)
+
+Now,lets say generating a rank for each employee based on totalpayout--
+=RANK(H2,$H$2:$H$16,1)
+
+#-----------------sorting and filtering
+
+types of sorting----
+sort worksheet/range---organizes all of the data by values of 1 col.
+multi value sort---organizes all of the data by values ofmultiple cols.
+sort by color--organize allofthe data by values of one/multiple rows horizontally
+custom sort-- sort col based on given order of values
+
+folder 4--- sort filter------
+
+select complete data table--in the ribbion of home---sort and filter---custom filter-----sort by department,sort on cell values,
+order--custom list--- under list entires-
+add --
+Sales
+Admin
+Support
+HR
+add--ok--ok
+
+how to sort data from left to right---We have a 3*3 table,we want to arrange the table based on the 3rd row,lowest value in the 1st col,highest value in last col
+
+row sorting in exce---select all the rows and cols---sort and filter from ribbion---customsort----options--sort left to right---ok--sort by --row 6--ok
+
+Filter---It is  used toshow  relevant info based on user requirement.
+
+It can be based onsingle or multiple cols of diff datatypes. It can also be applied
+to data table based on values ofanother table.Itprovides feature tocopy filtered results to other location.
+We can also extract unique values fromthe list of values.It can also bedonebased on font and cell color.
+
+Filter the recordsbased on payout cols where total payout>=500--
+select complete col--data ribbion---filter---u can alsoget this by ctrl+shift+l---clickon dropdown--number filters---greater than or equalto--500--ok
+
+totlpayout>500 andyearof joining is 2013 
+
+slect entire table--ctrlshift l---
+select complete col--data ribbion---filter---u can alsoget this by ctrl+shift+l---clickon dropdown--number filters---greater than or equalto--500--ok
+
+done then,head over to year--filter---select 2013 only
+
+filter data onpayper hours which has green colour--
+
+press ctrl shift l to remove filters.
+
+ctrl shift l-- filterby color--green
+
+Advanced filter-----
+filter records based on doj andonly want folks based on the dates given in other table.
+
+by default filtering--
+ctrl+shift+l--
+goto doj filter ofmain table--date filters--
+nut tis doesnt solve our requirement.
+
+So,select complete table--data tab in ribbion--goto advanced--
+nowtouse this filter u should have same col name ,same date format 
+list range willbe same-- criteria range is all the 4 rows including col of doj.
+
+Next I want to copy the filter result to another location to analyze it sepertely.
+ctrl+shift+l -- to remove filter
+select complete table
+data ribbion--advaced--choose copy to another location
+in copy to-- put the cell where u want tocopy.--ok
+
+How to copy the unique values--like from no.ofhours--
+select particular no. of hours col--advanced-- copy to another location--remove the listrange bcoz we donot 
+want entire table..instead select no.of hrs range--criteria range is nothing so keep it blank--put copy to 
+cell value-- tick unique records only.
+
+pivot table----
+converts data to col format
+the associated terminologies are-- filter fields,column fields,row fields, vlue fields
+
+dimensions - describes an object-- eg age , gender ,city ofcustomer
+metric-are the parameters that measures the dimensions.
+and these are context dependent def.
+
+how to insert pivot table on atable--
+select complete tble--insert ribbion--pivot table---from table/range--new worksheet
+U got all the 4 attributes in a new sheet and now u just need to drag and drop fields into the relevant cols
+for eg-if u want tolook at gender and city and count of customers--
+drag--gender into col,city into rows and customer id into values
+
+Now, here by default it has selected sum of customer ids, we want count,so--
+click on values customer id drop down--value field settings-- count
+
+few variations ofpivot table--
+value as % of row
+value as % ofcol
+value as % oftotal
+sum/count based
+calculated values
+
+eg--letssay we created apivot table--
+on colfield product, 
+on rows--sales--i.e. what we aretrying toanalyse is--
+which salesperson has sold what kind of product and value to start with is 
+no. of sales which each salesperson has done.
+and we have coltotals and row totals.
+then letssay we have sales person A--
+
+use of pivot tablefor slicing and dicing data--
+
+pivot_table2_sheet--
+insert intonew sheet
+keeping month as filter ,salesman rows,noof customersin values,product in cols--
+Now,joseph,maria,lawrence and matt are performng exceptionally better.
+but such kind of scenario in reallife is not possible if all the salespeople 
+wouldhave been for the similar timeperiod.
+
+So,we remove products and move months into cols.
+i.e. only these 4 people stayedwith the company till jun12
+rest all left.
+
+Now,lets exclude allthe other peopleand keep these 4 people only.
+click drop down of row labels and select these 4 only.
+
+Now, moving month back to filterand product to cols
+
+To see the data more granularly, click on any value--right click-- value field settings--
+show value as--click dropdown--% of col total
+Matt is best for fastcar,
+joseph for rapidzoo,
+matt for superglue
+
+Now,just select everything ctrlc,ctrl v on a diff cell--
+click on some value--show value as-- % of row total
+
+joseph and lawrence has liking towards superglue--
+
+paste complete table again--
+in values put profit/loss
+
+paste again--put net sales in values--
+
+Nowwe are trying to calc profit margins
+
+rapid zoo is he most profitable.Mgmt should incentivice this so sales people sell it more
+
+create anew pivot table--
+cols-product,rows-region,values-sum of net sales
+
+Hide and show grand totals--
+first click anywhre inside pivot table to get the tabs
+gotto ribbion--pivot table analyise--on the left u have options---totals and filters---
+uncheck show grand totals of rows and cols
+
+the other way is go to design--left grand totals--off for rows and cols 
+
+Sorting rows and cols--
+I want to sort products in acsending order--
+and regions in desceding---
+
+rowlabelsdropdown--choose descending
+
+Calculated fieldina pivot table--in a pivot table we want toinsert a new fiel or afeature 
+or new col
+inour case we want to  create abonus which is 5% of sales--
+our task is toinsert this bonus into a pivot table.
+
+First click anywhere inside the pivot table and u see pivot table analysis tab--
+in the ribbion find--fields,ites and sets--
+click calculated field--popupwindow--name it bonus--
+in formula---fromthe fieldsection , select net sales*0.05
+
+Calculated field is only visible in pivot data itself.And notin the actualsource table.
+##################################################################################################################### No Need  To Show To Students
+Auto Width disable---
+Now lets say,in a calculated col, i want to add bonus in summation of values.
+Now once I do this, th width of cols changes.
+and i dont want my colwidth to change based on whatwe are putting ..So wewant tokeep it static.
+pivot table analyze--->opions-->untick auto fit---
+  
+Diff from previous value---
+The que is--howiperformedcompaedtothe previou quarter?
+pivottable analyze--->field settings or in values when u say sum of net sales--->clickon the drop down--->
+goto value field settings-->show values as--->differrence from--->base field :quarters--->base item--->[previous]
+########################################################################################################################################
+Make pivot table dynamic---
+NOw, many times u get new data or cols into your source table and u need to add it into pivot table becoz that col is not automatically 
+added to pivot table field--So we will learn how to connect pivot table dynamically to your data source so that any changes made inthe 
+source table gets reflected in the pivottable as well.
+
+So we will go to pivot_table2 sheet add a col there--
+now,the data source is actually in range format and not in exceltable format--
+Now,how to identify if the data is in range or table?
+
+Range is  simply a collection of selected cells and is static in nature whereas a table is a structured dynamic range of cells.
+
+so,goto insert---table---by default complete data is selected---->ok
+
+--u can see table design tab in the ribbion.
+
+Goto table design---summarize with pivottable--new worksheet --ok
+Now goto pivot_table2 sheet-- insert colRandom_no as we do this,this becomes part of table.
+=RANDBETWEEN(10,500)
+Now,in sheet2 this col isnot present.
+
+so,goto pivot table analyze--refresh--col comes
+
+If you have many pivot table,then click refresh only.
+Bcause refresh all will refresh all the tables.
+
+Slicers in pivot table--the end user loves slicer.
+and helpsin granularlevel indersatnding.
+
+cols -product
+rows-region
+values--no.ofcustomers
+
+pivot table analyze---2options in ribbion--insert slicerand inserttimeline--
+insert slicer---select salesman and month--ok
+
+Slicers are dynamicfilters.
+so maria for may--
+
+rightclick on slicer--size and properties---position and layout---
+no.of cols--2
+
+timeline slicer---
+pivot table analyze---insert timeline--this only works with date field.
+
+Data Visualization---
+Excel charts--
+We allow our clinets to understand result in a moreimpactful manner
+
+When creating a graph--we include some or all of these---
+Data series,charts title,gridlines,axisvalue,axis title,legends,data labels,
+visual elements
+data series-- is collection of related values on the worksheets.
+
+Chart title-toshow he intent of the chart.
+
+How to create chart?---
+Steps-- 1. Create a data source,2.goto insert tab in the ribbion and select
+the rightchart 3. if required change theformatting  
+
+Tablefor region wise sales--
+1.1 excel_charts_data----
+select small table--insert--col chart-- toformat the chart--clickon anywhere in the chart--
+click on +------- another way is clickon chart design in the ribbion--
+---add chart element--
+To format chart--just click inside the char-- ctrl 1---
+
+1.changing chart color--ct 1 --fill--
+
+2.showing data labels--click anywher inside chart--- +---
+
+Col Chart in excel---
+i.select complete col--
+2. insert--recommended charts--or normal charts--stacked bar charts
+remove gridline--clickin chart--+---remove gridlines---
+clickin chart--+---data labels---
+chart title--region product sales
+
+If u want to change chart type--ribbion---change chart type--
+
+bar chart--values onx axis and categorieson y xis
+insert--recommended charts---stacked barchart
+
+Line chart--used to show trends over time or categories.
+category appears horiz(x-axis)
+value vertically(y-axis)
+selectdata--insert--select 1st chart
+but we donot want straight year line--so clickon the line--delete that
+
+for formatting clickon + tickdata labels--
+removing legend--since itis a single variable--
+title--year on year profit
+
+Area chart---It shows the relative importance of values overtime.
+it is similar to a line chart but because the area between lines 
+is filled in, the area chart emphasises the magnitude of values
+more than line chart does.
+insert---satcked area chart--
+title--sales and profit by year
+right click anywher in graph--select data--
+horizontalaxis---edit---select year range--ok
+
+Pie chart--Contains just 1 data serie.Sows realtionshipof parts
+to whole. None of the values that u want toplot are -ve.
+tite--product mix
+
+scatter chart--uses numeric values on both the sides.useful for showing 
+corr betwe data points that may not be easy to see fromthe data alone.
+select sales,manpower--+ axis title--sales x axis
+manpower y-axis.
+Conclusion--more the manpower more the sales
+clickn the axis values---right click--format axis--min-1200
+lly on y axis--min 100
+
+Bubble chart in excel--
+It compares sets of 3 variables. the size of bubble repesent
+the 3rd set of values that are being charted.
+xaxis-sales
+y axis-profit
+size of bubble-manpower
++ axis title-- x- sales,y-profit
+title-salesvs profit by manpower
+
+Dualaxis charts--combination of col and line charts.
+sales,manpower---chose simple bar chart
+but itsso small-so select chart---ribbion--chart design--change chart type---
+---combo---clustered colline or secondaryaxis
+copy bubble sheet to new sheet---
+select sales and manpower
+title-- sales manpower dualaxis
+data labels
+
+When to use which chart---
+dependupon diff msg u want to give--
+1.comparison--col charts,bar charts,line charts andeven scatter charts
+2.distribution--to show spred of ata values over categories or conti values
+scatter plot,box plot,bubble chart, col chart 
+eg. distribution of bugs found in 10 weeks o s/w testing phase
+
+3.breakupof whole--
+eg--revenue contribution of diff region,batsman scored on which sides of the ground
+pie chart,stacked col chart, stacked bar chart
+
+4. Relationship--scatterplot,line charts
+eg realtionship betwe strategic breaks and batsman dismisal
+
+5.Trends-- to represent timeseries data.
+eg hourly temp variation during a day.,run rate tracker over by over
+line chart
+
+Sparklines in excel--
+to show trends in a series of values,such as seasonalincreases or decreases.
+they fit into asingle cell.
+its 3 types are--line ,col,win/loss
+
+1.13 sparklines----
+select from b2 to g2--insert--select line diag in ribbion---
+in location range--h2
+
+and if in sparkline tab--click col--
+from marker color--select color
+#----------------------------------------------------------------------------------------------------------No need to Tell----------
+Waterfall chart--
+ques-- how did weperform against our targets last year?
+
+select table ctrlc---hit a cell--paste--keep colwidth sam option
+
+create 3 rows--base , fall and rise
+
+forfall
+=IF(B3<=0,B3*-1,0)--stretch this across complete fall row
+where,B3 corresponds to value
+next to rise-- =IF(I3>0,I3,0)
+
+now,base for 2012 and 2013 wouldbe zero.
+so put 0 here.
+now,formula for environment impact,manpower impact and productivity impact
+-base of the previousi.e. i4+rise of the previous i.e. i6 - the fall of the curent.
+=I4+I6-J5--strtch itin a row.
+
+select allthe cols from h2 to m2--keeppressing ctrl--
+select complete base row, fall row and rise row--
+insert in ribbion--select stacked col chart--
++ data labels-- excel took2012 and 2013 as data labels.
+So just select those 2 bars-- del
+now remove these 0s fromthe chart 1 by 1
+Now,the base values 113,93 93, we dnot need themin watrfallchart.
+select all  3--ctrl 1---select nofill
+then select the 3 labels-- dele them
+now formatting--untick gridlines,legend---
+rename chart--YOY comparison of revenue generation
+
+getting orange color--home--fill color--orange
+then changing x-axis names-- we want col namesthere
+click axis labels--select data--edit--select colrows--ok--ok
+
+now,changing 25 to green--
+
+y axis title--revenue in crs
+
+#=================================================================================================================
+
+Conditional foramtting----formatting based on conditions
+
+highlight cells rule---  
+
+Advance excel--1_conditional formatting--
+
+under home tab----conditional formatting--
+or press altH and L
+que 1-- select jan incentive cell--select complete col---conditionalforma--highlight cell rules-->=500
+clearrules
+qu 2--only select c2---cf-->=B2---ok--now donot drag and drop torest allrowsof col--
+copy c2------------>select rest all rows in col by ctrl+shift+down------right click ---->paste special--->paste format.
+
+or
+instead from home ribbion--use format painter--left click on mouse--drop
+
+3.ques-clear all rules--there is no rule as such. So we will create one.
+so--click on c2--conditionalform--new rule--rulr type-- use a formula to determine...  =mod(c2,2)=0
+then click format--fill--green---format painter--stretch down
+
+top bottomrules,multiplecells and heatmap
+
+4. select jan incentive--shift drag down--conditionalformatting---
+top/bottom--top10 items---popup window---3--ok
+
+5.--clear all rules---select jan incentive--shift drag down--conditionalformatting---
+top/bottom--above avg--ok
+
+6.highlight different col based on previous col
+ --clear all rules---select complete table--
+condi form---top/bottom--above avg---ok
+but we want employee code tobe highlighted--
+so remove all the formattings---select A2toA16---
+--newrule----=c2>average($c$2:$C$16)--format color--ok
+
+7.clear prev rules.----select jan incenives---condi--color schemes--selct 
+
+advance----notin zip--conditionalformatting(2)
+
+select application date--cf--highlight cell rules--date occuring--last week--ok
+lly,forlast month
+
+duplicate and unique----
+select dept---highlight cell riules---uplicate vaues
+----manage rule--edit rule--unique----
+
+how to remove duplicate values from excel in just 1 click---
+
+copy from anil kumar to mustaq ahmed--pastejust below--u want only unique names---
+
+select complet name col---goto dataribbin---data tools-- remove duplicates
+continue with current selection--
+
+++++++++++++++++++++++++++++++++++++++++
+Unique funion---sheet----not availablein excel
+
+unique departments  
+ 
++++++++++++++++++++++++++++++++++++++ No need of telling this++++++++++++++++++++++++++++++++++++++++++++++
+
+_5What-if------what if---sheet goal seek and solver---
+student must have score of >75 % to get promoted to next class--
+It works in the oppo way.It starts with the desired result
+average score=AVERAGE(B2:B5)
+it gives 73,and desired result is 75----data---whatif---goalseek---
+
+scenario manager--
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+data tables---
+
+click on D10 =K1--- attaches profit value with cell.
+lly, total sales. E10 =B3----for total Sales
+
+Now select complete table from c10 to E10 and till C25 to E25.------------go to data tab in ribbion---whatif--- data table-- 
+put in cols i/p cell--click on b1.
+
+For two way data table , in cell J10 =K1------- then select complete table---
+row input-- click on F1
+col input-- click on B1---------ok
+
+Goal Seek-------------------- go to data---->what if----> goal seek--->set cell --- click on profit i.e. B10, to value-- 32000,by changing cell-- B1
+
+Scenario Manager--------------
+
+						
+Scenario Summary						
+		Current Values:	Best	Avg	Worst	
+Changing Cells:						
+	$B$1	 ₹ 2.00 	 ₹ 5.00 	 ₹ 3.00 	 ₹ 1.50 	
+	$B$5	 ₹ 0.45 	 ₹ 0.30 	 ₹ 0.42 	 ₹ 0.50 	
+	$B$7	 ₹ 45,000.00 	 ₹ 35,000.00 	 ₹ 40,000.00 	 ₹ 50,000.00 	
+Result Cells:						
+	$B$10	 ₹ 27,850.00 	 ₹ 59,000.00 	 ₹ 58,040.00 	 ₹ 1,500.00 	
+
+---------------------------------------------------------------------------
+Solver is an add-on. Its not available by default. So, go to -- files--- options----add-ins---manage----excel add-ins --- go---Solver will come.
+
+B1<=3.5
+B5>=0.42
+B7>=44000
+
+#---------------------------------Dashboard---------------------
+countrywiseproductsold----rows--country,columns--products,values--sum of units sold
+
+segmentwiseproductsold--rows segment,colns--products,values--sum of units sold------
+
+make dashboard sheet--pivotchartanalyse---filterconnections--
+
+-----------------------------------------
+Macros-------
+
+quick access toolbar----more commands--customize ribbion----all tabs---developer-----ok
+
+now go to developer tab--use relative references---record macro---	where total=B4+C4			
+	Name	English	Hindi	Total
+	A	40	60	100
+	B	60	40	100
+	C	50	50	100
+
+--------------------------------------------------
+
+data validationand seciurity---
+data validation---
+data --->data validation---allow text length-->less than 5
+
+enter a number betweeen 25 to50---use input message
+--error message
+
+to highlight invalid data--data validation--circle invalid data 
+ 
+I put data validation rules..in error msg put warnings--after that put invalid data in cell--
+--continue---data validation---circle invalid data
+
+dropdown--data validation---list---source--N,E,S,W----ok
+
+How to protect excell sheets in workbook----
+
+We can apply protetion on cells,worksheet,entire workbook.
+Open acompletely new notebook--protecting entire wokbok--
+in cell 1 letssay enter excel
+
+Hyperlink---tolink toan external web page,or to jump to diff locations in the same workbooktha we are working on.
+
+folder 4--6_Hyperlink------ or ctrl+k
+on cell google---insert----link--existing file or web page--put address---ok
+the color of this font is changed to blue--and hyperlink is there.
+
+hyperlink to some other file---ctrlk
+
+linking sections in file------------------- formulas tab-----------------name manager----------------
+ctrlK--place in this doc---section 2 is written in c28
+now,going to each sectionand finding their cell ref will be quite difficult-- so we will name each section--
+clckon section1---formulas in ribbion----- name manager---new name---ok--ok
+
+lly,for setion 2 and 3 in diffe file.
+
+ctrlk---goto section u want to go
+
+Text to col---
+
+data---get external data---data---load it---from table---
+
+excel vs google sheets---
+excel is paid, sheets free
+
+Simulation----
+Assurenext is aradical insurance company.They distribute insurance through new channel known asrobossurance where they are installing smart machines in various locations.
+These machines study the consumer andsugggest insuance plan to them.
+They strted in 2009 and got multifoldin 6 years.
+The company is facing challenge with manufacturing and scaling up.
+The challenges here are--
+we have data upto 2015 and weneed topredict for 2016-2017.
+create a forecast for the business(premium received fromnew policies) in 2016 and 2017
+howmany new machines would be requred in order to reach 1700 million inr of premium
+from new policies in 2017?
+Asuming u cannot manufacture more than 6500 machines in a year and avg premium from a ppolicy
+to be inr 55000,what should be expected business in 2016 and 2017(quarter on quarter)
+
+Business understanding says that--
+total business=total no  of policies * avg premium per policy
+or,
+totalbusiness=(no. of machines*no. of policies permachine)*average premium per policy
+or,
+totalbusiness=(totla previous yearsm/c*no.of policy per previous year machine)+(total new machines*no. of policy per new machine))*avg premium per policy
+
+See Business understanding sheet.
+
+So, in the action items-- we are seeing what we want to acquire or what we want to get from the data that we have?
+
+policy_per_machine-- took data fromthe 1st sheet and pasted here.
+
+
+fromSagar-----how tofill upthis value
+year=year(Business_Sourcing_Months) 
+
+If you remember that the business model is that you install new machines every year and the machines installed in previous years or months also source the business.
+So the same is reflected in the above, from the total business sourced In Feb10 the business sourced from Sep09 and Oct09 installed machines are marked as the previous year.
+
+machine_year=IF(YEAR(B2)=YEAR(A2), "Current Year", "Previous Year")
+
+
+policy_per_machine
+Now, right now its in tabular format and we want to get an aggregation of all of these tofind out the total new policies per current year and previous year.
+select complete table---ctrlshift right and down arrow
+
+insert--pivot table--existing worksheet--
+we want totalnewpolicies, year,machine year
+drag year torows, machine_year tocol,sumof total to values
+
+Call this table--total business by year of sourcing
+
+Next from business pointof view-- I want tosee what % of the contribution am i getting fromthe current year as comparedto total?
+So,reating a colin thispivot table--
+% biz contribution by current year
+=current year/grand total
+This u can do by pivottablefor the 1st cell.
+fromnext cell simply write like--=I6/K6
+
+100%
+56%
+58%
+53%
+39%
+43%
+57%
+54%
+
+
+Now, pivot table--go to 3rdsheetand import in policy_per_machine sheet.
+total machines by year of sourcing---
+select machines_installed and years
+extract current year and previous year
+
+current year=values of sum of machines installed
+ctrlshift down
+previous year--
+Previous Year
+Row Labels	Sum of Machines_Installed	Current Year	Previous Year	
+2009			6410			6410		
+2010			4999			4999		6410	
+2011			5308			5308		11409	====K20+J20i.e.11409=6410+4999
+2012			6435			6435		16717	
+2013			4859			4859		23152	
+2014			4366			4366		28011	
+2015			5380			5380		32377	
+Grand Total		37757			
+	
+
+
+Now,wewant to figure out total machines for 2016 and 2017.
+the avg of last 2 years
+2016	4873---------------=AVERAGE(I24,I25)------------=average(sum ofmachines installed in year 2014,2015)
+2017	5126.5----------=AVERAGE(I25,I28)------------=average(sum ofmachines installed in year 2015,2016)
+
+Next figuringout--machine productivity by year of sourcing
+I want toknow,the business that they are giving is +ve,-ve,
+Is there any improvement I can do?--
+
+year--paste years fromabove table.
+current Year prod=I5/J19-----------9178/6410-----
+i.e.
+total business by year of sourcing	
+Sum of Total New Policies	Column Labels
+Row Labels	Current Year---------------------------in first table current year value 9178/second table current year
+
+PrevYearProd=J6/K20
+
+Next --we need to predict productivity fro2016 2017,
+first table current year/second table current year
+first table previous year/second table previous year
+
+	Machine Productivity By Year Of Sourcing		
+	Year	Current Year Prod	PrevYear Prod
+	2009	1.431825273	
+	2010	1.944388878		1.213416537
+	2011	2.868311982		0.959943904
+	2012	2.924786325		1.013279895
+	2013	2.400288125		0.776088459
+	2014	2.030233623		0.413123416
+	2015	2.152788104		0.265095593
+
+for 2016--average of 2014 and 2015---
+	2016	2.091510864		0.339109504
+	2017	2.122149484		0.302102548
+
+Now,we have answered
+ACTION ITEMS	
+Policy Per Machine	Previous
+			Current from business understanding sheet
+
+Now,goto 3rd sheet create pivot tableon that--we want macines installed--values and no.of years-rowsand put in Number_Machine sheet---
+2016=average(year 2014,2015)
+2017=average(year 2015,2016)
+
+This gives ans tono.of machines installed in 2016,2017
+
+Now,we need ans to---
+Average Premium Per Policy for 2016 and 2017---
+goto2nd sheet--we already have the avg premium per policy for every year til 2015,
+justcopy that complete table--and paste in sheet average_premium
+
+now for year 2016----avg of 2014,2015---50568
+2017----avg of 2015,2016---50958
+
+Now,we  want to do total business forecasting for2016 and 2017
+i.e. Yearly business prediction----
+sheet--yearly_biz_prediction
+
+created a copy yearly_biz_prediction(2)
+working on yearly_biz_prediction
+1st we willlokkat current_year machines--
+
+=VLOOKUP(A2,Number_Machine!$A$4:$C$10,3,0)---------drag till 2015
+
+[[where,number machine sheet is like--------------------------------
+		
+	Row Labels	Sum of Machines_Installed
+2009	2009	6410
+2010	2010	4999
+2011	2011	5308
+2012	2012	6435
+2013	2013	4859
+2014	2014	4366
+2015	2015	5380
+Grand Total	37757
+	2016	4873
+	2017	5127]]-----------------
+
+for 2016 ,2017 again average---which is 4873 and 5127
+
+Now,previous_year_mac--it will start wih 2010==previous yearmach+current year mach of last year---c3=c2+E2--drage down till2017
+
+now 1st col--number_machines--- it is a total---so,previous_yr_mach+current_yr_machs----b2=c2+e2
+
+Policy_per_machs_curr_year----here wewill use machine productivity table that we used earlier.===VLOOKUP(A2,Policy_per_Machine!$G$32:$J$41,3,0)
+
+using table 	
+Machine Productivity By Year Of Sourcing-------------------------------------------------nby policy_per_machine		
+	Year	Current Year Prod	PrevYear Prod
+2009	2009	1.431825273	
+2010	2010	1.944388878	1.213416537
+2011	2011	2.868311982	0.959943904
+2012	2012	2.924786325	1.013279895
+2013	2013	2.400288125	0.776088459
+2014	2014	2.030233623	0.413123416
+2015	2015	2.152788104	0.265095593
+2016	2016	2.091510864	0.339109504
+2017	2017	2.122149484	0.302102548-----------------------------------------
+
+Policy_Per_machines_previous_year---------------------------it starts from year 2010------------------=VLOOKUP(A3,Policy_per_Machine!$G$31:$J$41,4,0)
+
+Average Premium----based on average_premium sheet----start fromyear 2009----=VLOOKUP(A2,Average_Premium!$A$2:$B$10,2,0)----where complete table
+is selected from 2009
+
+total_policies---=C2*D2+E2*F2-----Previous_Yr_Mchs*Policy_Per_Machs_Previou_Yr+Current Year Machs*Policy_Per_Machs_Current_Yr
+
+total_premium(in millions)=G2*H2/10^6---------------------i.e avg_premium*total_policies
+
+challenge sheet--------------------------
+
+forecast the monthwise new business in 2016 and 2017
+ 
+Create aline chart using data fromsheet named "First"
+1. In the given sheet "First", after creating the year and month cols from 
+"Business_Sourcing_Month" col,select the complete table and insert pivot table.
+2. In the pivot table,select "Month" as row labels and "Year" as col labels.
+3. Select "Sum of Total New Policies as values" and set sumas the func.
+4. Then copy values only fromthe resulting pivot table into a new sheet.
+5. Select all the rows and cols except for grand total of rows and cols
+6.Insert aline chart for selected data.
+
+Month-wise business forecast---
+
+Now,create a new table with month on rows and year on cols
+2009 col=B3/$B$15----and drag down---i.e.180/grand_total for 2009---  
+write for allcols 
+
+Now, for sheet monthly_installation_trnd---goto sheet 3rd,take out year and month---
+build a pivot table on sheet--monthly_installation_trend
+
+Now,create a new table with month on rows and year on cols
+2009 col=B3/$B$15----and drag down---i.e.180/grand_total for 2009---  
+write for allcols 
+
+Now,movingto simulation sheet---
+we have the no.ofpolicies we have to forecast foreach month in 2016 and 2017.
+and the machines installed forecast for2016 and 2017.
+
+We need topouplate the sheet from yearly_biz_prediction---
+
+					
+			2016		2017		
+Total Policies		22996		23758		
+#Machines		4873		5127		
+Avg. Premium/Policy	50568		50958		
+Total Business		1162.85		1210.64	
+
+Now, wewant toget the %s frommonth_biz_trend sheet and put on top of each 
+month for no_of_policies.Because the formula that we will use will be this %*total policies
+
+for % value above Jan-16
+=VLOOKUP(MONTH(C13),Month_Biz_Trend!$A$21:$H$32,8,0)
+	
+=C12*$C$5----till dec-2016
+
+=O12*$E$5----fromjan-2017 tillend.
+
+monthly_installation-
+==VLOOKUP(MONTH(D17),Monthly_Installation_Trend!$A$35:$H$46,8,0)
+
+=C17*$C$6-----till dec-16 drag
+then for feb-17.
+
+
+Challenge Sheet--Q1
+=Simulation!$C$8*Simulation!C12--till dec-2016
+=Simulation!$E$8*Simulation!O12----fromjan-2017
+
+Adding flexibiltiy toour simulation----
+
+How interlinking diff sheets in excel can effect your simulation--
+This we are doing because we want to have sort of flexibility and adaptability when we are working with real world data.
+
+Working sheet------------
+from yearly_biz_prediction sheet--link average_pemium
+
+Now,Q2--
+data--->what if--->goal seek---
+1700
+#------------------------- open visualization dataset to share.xlsx------
+
+Line chart-- cols--months(order date), values--qty-- change it to count.-- draw line chart
+
+Line and Area chart--
+
+
+
+################################################################ Dashboard####################################3
+#-------------------------
+Open dynamic dashboard.xlsx--
+
+Dashboard_Customer_call_center_data -- case study
+
+
+paste data in data sheet to some new sheet.
+This data is about a call center.
+Dashboard helps us to maintain the kpis.
+
+In call center they are trying to resolve customer issues and increase sales.
+So what would be there kpi--?
+1. to track the sales
+2. how many calls they are getting from customers in a month.
+
+About the data== customer,duration for which
+this customer has talked, Purchase amount, Who gave 
+service to this customer is in Representative., then date of call.
+
+Now on the basis of this data, we need to think
+what all things we can track.
+i.e. lets say sales generated by the customers.
+for eg to decide who will be the employee of the month
+based on sales?
+KPI basically helps business personels to take decisions.
+Which customer is spending much,
+2-40 , 41-80 duration calls , i.e. longer calls are
+generating more data or shorter,
+from date cols we can extract how many calls came and
+how much sales happened.
+
+These are all our kpis.
+
+Its on u how much kpis u want.
+
+Create pivot table-- 
+rows customer id
+values-- purchase amt
+Here u can take top 10 customers from whom we have received higher asles
+row labels-->value filters-->top 10
+
+rename row lables to customer id.
+and next one to total sales.
+So in this first kpi, we r tracking,
+total sales generated by customer id.
+
+Now generating table for representatives.
+
+new pivot table--> rows-- representative
+values-- purchase amount.
+
+Rename these cols-- representative id,
+total sales.
+
+3 kpi-- months and total sales on these months,
+and number of calls.
+so, new pivot table, new worksheet,
+rows-- only keep date of call,
+values-- purchase amount, count of duration.
+rename to months, sales , total calls.
+
+Now, next KPI is duration--
+for each duration how many calls are there
+
+New pivot table-->rows-- duration-->
+values-->representative
+now this duration value, we want to bin them,
+so click on pivot table-->analyze-->click group selection option
+starting at 2
+ending at 176
+by lets say 30
+
+Now we will go to pivot charts--
+col chart for customer id , total sales
+
+next sheet--
+pie chart
+
+next sheet--
+combo-- total sales--line
+total calls-- columns-- click on secondary axis.
+
+next sheet--
+column chart is best
+
+Now I want to create a dashboard.
+
+Now keeping these charts to new sheet.
+
+Create a new sheet, name it dashboard--
+
+Now click on the chart-->design-->move chart-->
+
+Then remove the gridlines-->view--untick gridlines
+
+Then some heading-- Call Center Data Analysis
+
+Merge and Center
+
+Increase the size of this text.20--Background fill
+-- change font color
+
+Now adding slicers-
+
+customer id, representative, month , duration
+
+So with duration i want to know how many customers
+have talked and how much data have been generated.
+
+Now we will do some slicer settings--
+untick dispaly header,-- header is gone.
+tick hide data with no items.
+
+
+Now lets say if i want to show each and every customer in a
+single window, i dont want to scroll it then,
+
+select no. of columns
+
+Now connecting all these slicers with all the others.
+So click on any slicer--> report connection-->
+Now tick all.
+
+
+Connect all the slicers.
+
+U can press control to select more options in slicer.
+
+Now customizing a little bit more.
+in charts show axis titles, data labels
+
+Total Sales To Customers-- axis title-- column chart
+
+Total Sales and Number of Calls vs Months-- combo chart
+
+
+Duration of Calls vs Number of Calls
+
+
+Total Sales By Representatives- pie chart-- show data labels
+
+Then set axis title-- Total SAles, Total calls in combo chart
+
+Now analyzing the trends of sep and oct.
+
+like who is the best representative in which month.
+
+U can change the color pallete.
+
+U can change the color palette of slicers also.
+
+------------
+######################################################## Multiple Sheet Join ###############################
+Then taking US Regional SAles Data--
+
+Now Sales team id is the primary key between Sales team sheet and sales order sheet.
+
+So we can join these two.
+
+Goto data --> relationships-->new--->table -> sales--> related table -->sales_team
+foreign key-- sales team_id , primary key-->sales teamid
+
+This will create a data model.Now if u want to join 1 more table-- then--
+through customer id we can join sales team sheet with customer sheet.
+
+so being in sales team sheet--> data-->new-- table sales-->related table -->customers
+--> foreign key--> customerID, primary key--> customer id
+
+close--
+
+now insert pivot table on sales order sheet-- rows customer_id-- scroll down -- more tables--
+customers--> customer name then remove customer id
+
+ then from sales table -->unit price in values.
+
+Now customer name was not present in sales table,
+but with the help of the data model, for each of the customer names , it is giving me price.
+So we have not applied any vlookup.
+
+now u can even add line chart.
+
+#------------------------------------------
+###################################################################################
+######################################################################################
+
+
+Dashboard 000000000000000000000000000000000 RituRaj Sir
+
+###################################################################################
+######################################################################################
+
+Sales_Practice_Min_Raw-0.1------------
+
+Input Data Sheet
+
+
+Sales==[@[UNIT PRICE ($)]]*[@QUANTITY]
+Country= =VLOOKUP([@[CUSTOMER NAME]],Country[#All],2,0)
+Region= =VLOOKUP([@[CUSTOMER NAME]],Country[#All],3,0)
+Day=DAY([@DATE])
+Month=TEXT([@DATE],"mmm")
+Year=YEAR([@DATE])
+Week=WEEKNUM([@DATE])
+
+Next, we r launching pivot table.Rename this sheet to Pivot table.
+
+rows-- country, values-- sales
+so this gives us, country wise sales.
+Rename Row Labels to Countries.
+Next goto puivot table analyze--
+on the left --pivot table-- rename to-- Country
+
+
+Next copy this pivot table and paste leaving 1-2 cell.
+In rows put Region-- And on row labels put Region
+and rename Pivot table to Region
+
+Then we have simply, Sum of sales on values
+Rename this pivot table to TotalSales
+
+Next copy paste again,
+and put product on rows and values--sales
+Rename row labels and Pivit Table name to Product
+
+Next we will take out month wise sales--
+rows-- month, values--sales
+rename colname Month and table name to MonthSales
+
+Next ios Year wise sales--
+rows--year,values--sales
+rename colname to Year and table name to YearSales
+
+Next os Week wise sales--
+rows--week, values--sales
+rename col-- Week, and PivotTable--WeekSales
+
+Then cust name and sales,
+rename Customer Name and
+pivot table--Customers
+
+So total 7 pivot tables.
+
+Next is insert slicer--
+Click country --ok
+
+Next with slicer we get report connection--
+tick all of them.
+
+Now u can clcik on country names to see data 
+accordingly.
+
+Next open power point presentation,
+in a blank sheet-- insert 7-8 boxes.--
+Save as- For Dashboard
+
+copy--create a new sheet in excel--
+rename it to dashboard--paste--
+from the right corner, minimize,
+so that u can see more clearly.
+
+Then on the top left box, drop text box
+Now got Pivot Tables sheet-- we cannot directly drag and
+drop values. So in any cell write, = and select cell
+on which total sales value is there.
+Once the value will come, coopy that and paste into textbox.
+
+And format it.
+
+Then from PivotTable-- region table--
+click on grand total--right clcik--
+remove grand total--next use donut chart
+then pivot chart analyse-- field buttons--
+Untick everythiong and see.
+
+Next from + sign of chart remove chart title.
+From brush option select 3rd with area%.
+
+Next copy it and paste it on dashboard 3rd box.
+
+Next are top most customers of company.
+so remove grand total from customer pivot table.
+then clcik on sales of the table and sort--largest to smallest.
+
+Next click on column Customer Name filter--
+value filter-- top 5--ok
+
+then in recommended charts-- take simple col chart
+field buttons--hide all--
+fro + only keep Axes--
+from brush choose any
+
+paste in dashboard.
+
+Next is product--
+Same as customer.
+For product taking bar chart.
+Field buttos hide all.
+Then click on bars and sort larget to smallest.
++-- keep axes
+
+Then from paint choose sum.
+
+Copy and paste on dashboard down 1st.
+
+Next we will insert area chart for week.
+hide all and do formatting.
+
+Next remove grand total from week, sales
+Come to countries and remove grand total.
+
+Next we will use offset next to country table,
+because we can't use map for now.
+So on thheader of country table we have,
+countries , sum of sales,
+so next to sum of sales , write-- 
+=offset(click on header country -- absolute ref,
+then we want data to be extracted 1 row below,
+col 0, height is count --so for count
+just select complete col from top--absolute ref,
+
+So, just in front of Bangladesh cell--
+=OFFSET($A$3,1,0,COUNT($B:$B),1)
+
+and next to it-- =OFFSET($B$3,1,0,COUNT($B:$B),1)
+
+Next plot any chart and put it on dashboard.
+
+Now next coming to target sheet.
+mionth name from target sheet only,
+look up table from pivot table sheet --
+-- select both month and sum of sales with header
+select complete table.
+
+Actual== =VLOOKUP([@[Month Name]],MyPivotTable.!$N$3:$O$16,2,0)
+
+Next , if target less than actual-- below.
+if target>actual-- above.
+So, Below($)
+=IF([@[Actutal ($)]]<[@[Target ($)]],[@[Actutal ($)]],NA())
+And Above($)
+=IF([@[Target ($)]]<[@[Actutal ($)]],[@[Actutal ($)]],NA())
+
+now select complete col--Month Name and pressing ctrl key
+select target,below,above
+--insert-- recommnended chart--take clustered col chart--
+kepp legend--from chart design u can select
+
+Next on pivot table -- 2 slicers--
+regions and months.
+
+Select with all.
+
+Copy region slicer and paste on dashboard.
+
+Next is HR data Attrition Level--
+Attrition means leaving of job.
+
+insert-pivot table--rename-- Pivot Tbales
+in values-- put employee number--- then instead of
+sum put count.
+
+Then in a new cell , give heading-- Total Employees 
+and below it do =and addr of cell 1470.
+
+i.e.
+Total Employees
+=GETPIVOTDATA("Employee Number",$A$3)
+
+then , in the same pivot value,put
+values-- CF_attrition counts
+keep it sum only.
+
+AND name this pivot table--kpi
+
+then next to Total Employees Cell,
+In a cell write-- Attrition Count
+=GETPIVOTDATA("Sum of CF_attrition count",$A$3)
+
+Next put age in values,
+instead of sum put average.
+
+And next to Attrition Count,
+in a cell give heading-- Age of Attrition 
+=GETPIVOTDATA("Average of Age",$A$3)
+
+then remove 0's.
+
+Next quest is how many active employees are there?
+So give heading Active Employees in a cell
+=Total Employees-Attrition Count
+=A7-B7
+
+Next attrition rate--
+=Attrition Count/Total Employees
+=b7/a7-- make it %.
+
+these r our 5 kpis.
+so going to powerpoint-- blank sheet--
+
+Do ctrl C, ctrl V.
+
+Rename this as Dashboard.
+
+Then on the top boxes, put text box,
+and write headings on individual box--
+
+Next on pivot table -- insert slicer- gender--ok
+
+Now lets suppose we want to see according to education
+what is the attrition count.
+So pivot table-- rows-education
+value--cf_attrition
+
+For now , remove slicer from dashboard.
+
+Pivot Chart-- col chart--ok.
+
+Next Department Wise Attrition Count.
+Nmae it Department
+rename col--Department
+
+2:01---2024-02-11 13_09
+https://drive.google.com/drive/folders/1Ic6MtHyqcft2CvjI5ox6SyjqiasD1QKN
+
+col chart for education.
+bar chart for Department
+
+then put job role on rows
+sales on values.
+Get the offset--
+=OFFSET($E$9,1,0,COUNT($E:$E),1)
+=OFFSET($F$9,1,0,COUNT($F$10:$F$18),1)
+
+Now plotting Tree map.
+
+Next bar chart for age band.
+rows-- CF_ageband
+values--sales
+Name-- age band
+bar chart
+
+Next adding slicer--
+Marital status.
+
+
+#----------------------- new cource------------------------
+
+Date functions----
+
+=TODAY()
+
+=DAY("5-9-2021")
+=MONTH(TODAY())
+=YEAR(TODAY())
+
+
+birthdate=DATE(2020,6,12)
+=TODAY()+8
+
+=now()
+
+remove saturday sundays.
+
+Named Ranges----
+
+Auto fill custom list.
+
+If i want to ad  same data in my sheets.
+this is called as grouping of sheets.
+select 1st sheet press ctrl and select other sheets.
+
+if the sheets are adjacent then u can select sheet + 
+shift + last sheet.
+then go to a cell where u want to add common data.
+
+create a structure some formatting and done.
+
+value will not be copied but formula will be
+ 
+# excel ai
+home--add-ins
+or developer add-in
+
+search chat gpt for excel -- add add-in office store-- search chat gpt
+add in-- chat gpt for excel.
+
+it has its own library of function.
+like AI.ask. ai.table. ai
+help.appsdowonders.com/article/23-function-ai-ask
+new sheet--
+
+ai.ask(create a whatsapp message for birthday)
+
+ai.ask(write a message for friendship day)
+
+ai.table(give me top 10 it companies)
+
+ai.table("10 best dishes from india")
+
+ai.translate("select friendship day wish cell eg B5,"hindi")
+or marathi or punjabi, gujrati
+
+now, in some cell just write a text,
+my name is Parinita, My phone number is 123456542
+
+and i want to extract phone number--
+ai.extract(cell value,"phone number")
+
+ai.ask("give the excel formula to calculate sum of"&H37&""&I37) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+		
+
+
+ 
+
+
+
+
+
+
+
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+   
+
+  
+
+  
+
+ 
+
+
+ 
+
+    
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+										
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+				
+  
+ 
+
+  
+  
