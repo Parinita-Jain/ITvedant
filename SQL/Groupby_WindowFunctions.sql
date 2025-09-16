@@ -309,3 +309,237 @@ FROM employee;
 💡 GROUP BY = only one row per department.
 💡 Window Function = shows every employee + their dept topper’s salary.
 */
+
+#-------------------------------------
+
+/*
+1. Retrieve all customer records
+SELECT * 
+FROM Customers;
+
+2. Get details of customers from the UK
+SELECT * 
+FROM Customers
+WHERE country = 'UK';
+
+3. Get customers older than 25 and from either the USA or UK
+SELECT * 
+FROM Customers
+WHERE age > 25 
+  AND country IN ('USA', 'UK');
+
+4. Find customers aged between 22 and 28
+SELECT * 
+FROM Customers
+WHERE age BETWEEN 22 AND 28;
+
+5. Get customers from either USA or UAE
+SELECT * 
+FROM Customers
+WHERE country IN ('USA', 'UAE');
+
+6. Find customers whose first name starts with 'Jo'
+SELECT * 
+FROM Customers
+WHERE first_name LIKE 'Jo%';
+
+7. List distinct countries from the Customers table
+SELECT DISTINCT country 
+FROM Customers;
+
+8. Get the top 3 highest value orders
+SELECT * 
+FROM Orders
+ORDER BY amount DESC
+LIMIT 3;
+
+9. Select orders where amount is not null
+SELECT * 
+FROM Orders
+WHERE amount IS NOT NULL;
+
+10. Show each customer’s name and a category based on age
+SELECT first_name, last_name, age,
+       CASE 
+           WHEN age < 25 THEN 'Youth'
+           WHEN age BETWEEN 25 AND 30 THEN 'Adult'
+           ELSE 'Senior'
+       END AS age_group
+FROM Customers;
+
+11. Show each customer’s full name in format LASTNAME, firstname
+SELECT UPPER(last_name) || ', ' || LOWER(first_name) AS formatted_name
+FROM Customers;
+
+
+(For MySQL: use CONCAT instead of ||.)
+
+12. Round off order amounts
+SELECT order_id, amount,
+       ROUND(amount, -2) AS rounded_amount,
+       CEIL(amount) AS ceiling_amount,
+       FLOOR(amount) AS floor_amount
+FROM Orders;
+
+13. Compare each order’s amount to the average
+SELECT order_id, amount,
+       CASE 
+           WHEN amount > (SELECT AVG(amount) FROM Orders) THEN 'Above Average'
+           ELSE 'Below Average'
+       END AS comparison_result
+FROM Orders;
+
+14. Total, average, min, max amount
+SELECT SUM(amount) AS total_amount,
+       AVG(amount) AS average_amount,
+       MIN(amount) AS minimum_amount,
+       MAX(amount) AS maximum_amount
+FROM Orders;
+
+15. Customers with more than 1 order
+SELECT customer_id, COUNT(*) AS total_orders
+FROM Orders
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+
+16. Customers with >1 order, sorted
+SELECT customer_id, COUNT(*) AS total_orders
+FROM Orders
+GROUP BY customer_id
+HAVING COUNT(*) > 1
+ORDER BY total_orders DESC;
+
+17. Total amount spent per customer (if > 500)
+SELECT customer_id, SUM(amount) AS total_spent
+FROM Orders
+GROUP BY customer_id
+HAVING SUM(amount) > 500
+ORDER BY customer_id;
+
+18. Mouse/Keyboard orders (if > 1)
+SELECT customer_id, COUNT(*) AS total_orders
+FROM Orders
+WHERE item IN ('Mouse', 'Keyboard')
+GROUP BY customer_id
+HAVING COUNT(*) > 1
+ORDER BY total_orders DESC;
+
+19. Customers with orders > average order amount (Subquery)
+SELECT * 
+FROM Customers
+WHERE customer_id IN (
+    SELECT customer_id 
+    FROM Orders
+    WHERE amount > (SELECT AVG(amount) FROM Orders)
+);
+
+20. Subquery in SELECT clause (Order + customer name)
+SELECT order_id, item, amount,
+       (SELECT first_name 
+        FROM Customers c 
+        WHERE c.customer_id = o.customer_id) AS customer_name
+FROM Orders o;
+
+21. Subquery with IN – Customers with Delivered shipment
+SELECT first_name, last_name
+FROM Customers
+WHERE customer_id IN (
+    SELECT customer 
+    FROM Shippings
+    WHERE status = 'Delivered'
+);
+
+22. Customers who placed at least 1 order
+SELECT * 
+FROM Customers
+WHERE customer_id IN (SELECT DISTINCT customer_id FROM Orders);
+
+23. Customers who never placed any order
+SELECT * 
+FROM Customers c
+WHERE c.customer_id NOT IN (SELECT DISTINCT customer_id FROM Orders);
+
+🔗 Joins
+24. Customer names and their ordered items
+SELECT c.first_name, c.last_name, o.item
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id;
+
+25. All customers and their orders (if any)
+SELECT c.first_name, c.last_name, o.item
+FROM Customers c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id;
+
+26. Customer names and items > ₹500
+SELECT c.first_name, o.item, o.amount
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.amount > 500;
+
+27. Order details with customer country
+SELECT o.order_id, o.item, o.amount, c.country
+FROM Orders o
+JOIN Customers c ON o.customer_id = c.customer_id;
+
+28. Customers with pending shipment
+SELECT c.first_name, c.last_name, s.status
+FROM Customers c
+JOIN Shippings s ON c.customer_id = s.customer
+WHERE s.status = 'Pending';
+
+29. Customers who placed both Mouse & Keyboard (self-join)
+SELECT DISTINCT c.first_name, c.last_name
+FROM Orders o1
+JOIN Orders o2 ON o1.customer_id = o2.customer_id
+JOIN Customers c ON o1.customer_id = c.customer_id
+WHERE o1.item = 'Mouse' AND o2.item = 'Keyboard';
+
+30. Customers who haven’t received any delivery
+SELECT c.first_name, c.last_name
+FROM Customers c
+WHERE c.customer_id NOT IN (
+    SELECT customer FROM Shippings WHERE status = 'Delivered'
+);
+
+31. All customers and their order amount (if none, 0)
+SELECT c.customer_id, c.first_name, c.last_name,
+       COALESCE(o.amount, 0) AS order_amount
+FROM Customers c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id;
+
+32. Shipping priority
+SELECT s.shipping_id, s.status, c.first_name, o.amount,
+       CASE 
+           WHEN s.status = 'Delivered' THEN 'Low'
+           WHEN s.status = 'Pending' AND o.amount > 1000 THEN 'High'
+           ELSE 'Medium'
+       END AS shipping_priority
+FROM Shippings s
+LEFT JOIN Customers c ON s.customer = c.customer_id
+LEFT JOIN Orders o ON c.customer_id = o.customer_id;
+
+33. Customers who ordered items above average amount
+SELECT DISTINCT c.customer_id, c.first_name, c.last_name, c.age, c.country
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.amount > (SELECT AVG(amount) FROM Orders);
+
+34. Unique items ordered, sorted alphabetically, limit 5
+SELECT DISTINCT item
+FROM Orders
+ORDER BY item ASC
+LIMIT 5;
+
+Key Insights
+
+Majority of customers are from USA & UK.
+
+Only 1 customer (David Robinson) made a high-value order above average.
+
+Customer 4 (John Reinhardt) is the most frequent buyer.
+
+About 40% of customers (2/5) still have pending shipments.
+
+The order distribution is highly skewed (Monitor = ₹12,000 vs others <₹500).
+
+*/
