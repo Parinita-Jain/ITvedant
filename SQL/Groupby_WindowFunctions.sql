@@ -148,7 +148,8 @@ WHERE EXISTS (
 What is a Window Function?
 
 👉 GROUP BY works on groups and reduces rows.
-👉 Window Functions work on groups too, but they don’t reduce rows — instead, they add extra information to each row.
+👉 Window Functions work on groups too, but they don’t reduce rows — instead, they add extra information 
+to each row.
 
 💡 Think of it like this:
 
@@ -543,3 +544,153 @@ About 40% of customers (2/5) still have pending shipments.
 The order distribution is highly skewed (Monitor = ₹12,000 vs others <₹500).
 
 */
+
+#------------------------ Subqueries-----------------------
+
+use window_fun;
+
+#We already have your employee table. Let’s build queries:
+
+# 1. Scalar Subquery (single value)
+
+# Compare with overall average salary.
+
+-- Employees earning more than the overall average salary
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee
+WHERE SALARY > (SELECT AVG(SALARY) FROM employee);
+
+# 2. Subquery with IN
+
+# Match department names using another query.
+
+-- Employees from departments where average salary > 6000
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee
+WHERE DEPT_NAME IN (
+    SELECT DEPT_NAME
+    FROM employee
+    GROUP BY DEPT_NAME
+    HAVING AVG(SALARY) > 6000
+);
+
+
+
+-- Show all employees, but only if there is at least one employee in HR department
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee e
+WHERE EXISTS (
+    SELECT 1
+    FROM employee
+    WHERE DEPT_NAME = 'HR'
+);
+
+# 5. Correlated Subquery
+
+/*
+What is a Correlated Subquery?
+
+A normal subquery runs once, gives a result, and outer query compares against it.
+
+A correlated subquery runs again and again for each row of outer query, 
+because it depends on the outer row’s value.
+*/
+
+# Inner query depends on outer query.
+
+#Find employees with minimum salary in their department
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee e
+WHERE SALARY = (
+    SELECT MIN(SALARY)
+    FROM employee
+    WHERE DEPT_NAME = e.DEPT_NAME
+);
+/*
+Explanation --  So there are two copies of the same table being used:
+
+Outer copy = checking each employee one by one.
+
+Inner copy = calculating the min salary for the department of that employee.
+
+WHERE DEPT_NAME = e.DEPT_NAME
+means:
+
+👉 “In the inner query, only look at rows that have the same department as the 
+employee currently being checked in the outer query.”
+
+Suppose the outer query is checking employee Mohan (Admin, 4000).
+
+The inner query runs as:
+
+SELECT MIN(SALARY)
+FROM employee
+WHERE DEPT_NAME = 'Admin';
+
+
+It returns 2000 (because Gautham in Admin earns 2000).
+
+Now outer query compares:
+Is Mohan’s salary (4000) = 2000? → No → Mohan not selected.
+
+Next, when outer query checks Gautham (Admin, 2000), inner query again runs:
+MIN(SALARY) FROM Admin = 2000
+→ Yes, matches → Gautham is selected.
+
+Why this is correlated?
+
+Because the inner query depends on the outer query’s 
+current row (it changes depending on which employee we’re looking at).
+*/
+
+
+# 6. Subquery with ANY
+
+# Compare with at least one value.
+
+-- Employees earning more than ANY HR salary
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee
+WHERE SALARY > ANY (
+    SELECT SALARY
+    FROM employee
+    WHERE DEPT_NAME = 'HR'
+);
+
+#Subquery with ALL
+
+# Compare with all values.
+
+-- Employees earning more than ALL HR salaries
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee
+WHERE SALARY > ALL (
+    SELECT SALARY
+    FROM employee
+    WHERE DEPT_NAME = 'HR'
+);
+
+# 8. Nested Subquery
+
+# Subquery inside another subquery.
+
+-- Employees whose salary is above dept average
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee e
+WHERE SALARY > (
+    SELECT AVG(SALARY)
+    FROM employee
+    WHERE DEPT_NAME = e.DEPT_NAME
+);
+
+
+#Mix subquery + condition.
+
+-- Employees earning more than the average of Finance dept
+SELECT emp_NAME, DEPT_NAME, SALARY
+FROM employee
+WHERE SALARY > (
+    SELECT AVG(SALARY)
+    FROM employee
+    WHERE DEPT_NAME = 'Finance'
+);
