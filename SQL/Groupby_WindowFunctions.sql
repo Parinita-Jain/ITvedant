@@ -549,22 +549,53 @@ The order distribution is highly skewed (Monitor = ₹12,000 vs others <₹500).
 
 use window_fun;
 
-#We already have your employee table. Let’s build queries:
+#Subquery Guide (with Employee Table)
+# 1. Subquery in SELECT (Scalar subquery)
 
-# 1. Scalar Subquery (single value)
+# Adds an extra calculated column.
 
-# Compare with overall average salary.
+SELECT emp_NAME, DEPT_NAME, SALARY,
+       (SELECT AVG(SALARY) FROM employee) AS company_avg_salary
+FROM employee;
 
--- Employees earning more than the overall average salary
+
+# Insight: Every row shows employee info + company-wide average salary.
+
+# 2. Subquery in WHERE
+
+# Filters rows using another query.
+
+-- Employees earning more than average salary
 SELECT emp_NAME, DEPT_NAME, SALARY
 FROM employee
 WHERE SALARY > (SELECT AVG(SALARY) FROM employee);
 
-# 2. Subquery with IN
+# 3. Subquery in HAVING
 
-# Match department names using another query.
+# Works after GROUP BY.
 
--- Employees from departments where average salary > 6000
+-- Departments with avg salary above company average
+SELECT DEPT_NAME, AVG(SALARY) AS avg_sal
+FROM employee
+GROUP BY DEPT_NAME
+HAVING AVG(SALARY) > (SELECT AVG(SALARY) FROM employee);
+
+# 4. Subquery in FROM (Derived table)
+
+# Used like a temporary table.
+
+SELECT dept_name, avg_salary
+FROM (
+    SELECT DEPT_NAME, AVG(SALARY) AS avg_salary
+    FROM employee
+    GROUP BY DEPT_NAME
+) t;
+
+# 5. IN with Subquery
+
+# Checks if value belongs to a list.
+
+-- Employees in departments where avg salary > 6000
 SELECT emp_NAME, DEPT_NAME, SALARY
 FROM employee
 WHERE DEPT_NAME IN (
@@ -574,123 +605,74 @@ WHERE DEPT_NAME IN (
     HAVING AVG(SALARY) > 6000
 );
 
+# 6. ANY with Subquery
+
+# Condition is true if it matches at least one row.
+
+-- Employees earning more than ANY salary in HR dept
+SELECT emp_NAME, SALARY
+FROM employee
+WHERE SALARY > ANY (
+    SELECT SALARY FROM employee WHERE DEPT_NAME = 'HR'
+);
 
 
--- Show all employees, but only if there is at least one employee in HR department
+# Means: salary > the lowest HR salary.
+
+# 7. ALL with Subquery
+
+# Condition must be true for all rows.
+
+-- Employees earning more than ALL HR salaries
+SELECT emp_NAME, SALARY
+FROM employee
+WHERE SALARY > ALL (
+    SELECT SALARY FROM employee WHERE DEPT_NAME = 'HR'
+);
+
+
+# Means: salary > highest HR salary.
+
+# 8. EXISTS with Subquery
+
+# True if inner query returns any row.
+
+-- Employees in departments that have at least one person earning > 10000
 SELECT emp_NAME, DEPT_NAME, SALARY
 FROM employee e
 WHERE EXISTS (
     SELECT 1
     FROM employee
-    WHERE DEPT_NAME = 'HR'
+    WHERE DEPT_NAME = e.DEPT_NAME
+      AND SALARY > 10000
 );
 
-# 5. Correlated Subquery
-
-/*
-What is a Correlated Subquery?
-
-A normal subquery runs once, gives a result, and outer query compares against it.
-
-A correlated subquery runs again and again for each row of outer query, 
-because it depends on the outer row’s value.
-*/
+# 9. Correlated Subquery
 
 # Inner query depends on outer query.
 
-#Find employees with minimum salary in their department
+-- Employees who have max salary in their department
 SELECT emp_NAME, DEPT_NAME, SALARY
 FROM employee e
 WHERE SALARY = (
-    SELECT MIN(SALARY)
+    SELECT MAX(SALARY)
     FROM employee
     WHERE DEPT_NAME = e.DEPT_NAME
 );
+
+
+#e.DEPT_NAME makes it correlated → compares within each dept.
+
 /*
-Explanation --  So there are two copies of the same table being used:
+IN → "in this list?"
 
-Outer copy = checking each employee one by one.
+ANY / SOME → "better than at least one?"
 
-Inner copy = calculating the min salary for the department of that employee.
+ALL / EVERY → "better than everyone?"
 
-WHERE DEPT_NAME = e.DEPT_NAME
-means:
+EXISTS → "does this situation exist?"
 
-👉 “In the inner query, only look at rows that have the same department as the 
-employee currently being checked in the outer query.”
+Scalar subquery → "single number for all rows"
 
-Suppose the outer query is checking employee Mohan (Admin, 4000).
-
-The inner query runs as:
-
-SELECT MIN(SALARY)
-FROM employee
-WHERE DEPT_NAME = 'Admin';
-
-
-It returns 2000 (because Gautham in Admin earns 2000).
-
-Now outer query compares:
-Is Mohan’s salary (4000) = 2000? → No → Mohan not selected.
-
-Next, when outer query checks Gautham (Admin, 2000), inner query again runs:
-MIN(SALARY) FROM Admin = 2000
-→ Yes, matches → Gautham is selected.
-
-Why this is correlated?
-
-Because the inner query depends on the outer query’s 
-current row (it changes depending on which employee we’re looking at).
+Correlated → "compare row-by-row inside dept/team"
 */
-
-
-# 6. Subquery with ANY
-
-# Compare with at least one value.
-
--- Employees earning more than ANY HR salary
-SELECT emp_NAME, DEPT_NAME, SALARY
-FROM employee
-WHERE SALARY > ANY (
-    SELECT SALARY
-    FROM employee
-    WHERE DEPT_NAME = 'HR'
-);
-
-#Subquery with ALL
-
-# Compare with all values.
-
--- Employees earning more than ALL HR salaries
-SELECT emp_NAME, DEPT_NAME, SALARY
-FROM employee
-WHERE SALARY > ALL (
-    SELECT SALARY
-    FROM employee
-    WHERE DEPT_NAME = 'HR'
-);
-
-# 8. Nested Subquery
-
-# Subquery inside another subquery.
-
--- Employees whose salary is above dept average
-SELECT emp_NAME, DEPT_NAME, SALARY
-FROM employee e
-WHERE SALARY > (
-    SELECT AVG(SALARY)
-    FROM employee
-    WHERE DEPT_NAME = e.DEPT_NAME
-);
-
-
-#Mix subquery + condition.
-
--- Employees earning more than the average of Finance dept
-SELECT emp_NAME, DEPT_NAME, SALARY
-FROM employee
-WHERE SALARY > (
-    SELECT AVG(SALARY)
-    FROM employee
-    WHERE DEPT_NAME = 'Finance'
-);
