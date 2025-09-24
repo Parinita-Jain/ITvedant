@@ -1,0 +1,44 @@
+create table pizza_types
+(type_id varchar(50),
+name varchar(50),
+category varchar(50)
+);
+
+insert into pizza_types values
+("bbq_chk", "The Barbeque Chicken Pizza", "Non-Veg"),
+("pnr_tik", "The Panner Tikka Pizza","Non-Veg")
+("cali_chk", "The Calabrese Pizza", "Non-Veg"),
+("veg_alfredo", "The Veggie Alfredo Pizza", "Veg"),
+("chk_pesto","The Chicken Pesto Pizza", "Veg"),
+("classic_dlx", "The Classic Pizza", "Veg"),
+("southy_veg","The Classic Southy Veg Pizza", "Veg");
+
+create table pizzas
+(id int,
+pizza_id varchar(50),
+pizza_type_id varchar(50),
+size varchar(50),
+price float);
+
+insert into pizzas values
+(1 ,"bbq_chk_s","bbq_chk","S",120),
+(2 , "bbq_chk_m","bbq_chk","M", 180),
+(3 , "bbq_chk_l","bb_chk", "L", 240),
+(4 , "pnr_tik_s","pnr_tik","S", 100),
+(5 , "pnr_tik_m", "pnr_tik", "M", 150),
+(6 ,"pnr_tik_l","pnr_tik","L",210),
+(7 ,"cali_chk_s","cali_chk","S",150),
+(8, "cali_chk_m","cali_chk","M",210),
+(9, "cali_chk_l","cali_chk","L",330),
+(10, "veg_alfredo_s","veg_alfredo","S",110),
+(11, "veg_alfredo_m","veg_alfredo","M",170),
+(12, "veg_alfredo_l","veg_alfredo","L",210),
+(13,"chk_pesto_s","chk_pesto","S",260),
+(14,"chk_pesto_m","chk_pesto","M",290),
+(15,"chk_pesto_l","chk_pesto","L",320),
+(16,"classic_dlx_s","classic_dlx","S",250),
+(17,"classic_dlx_m","classic_dlx","M",290),
+(18,"classic_dlx_l","classic_dlx","L",330),
+(19,"southy_veg_s","southy_veg","S",215),
+(20,"southy_veg_m","southy_veg","M",265),
+(21,"southy_veg_l","southy_veg","L",290);

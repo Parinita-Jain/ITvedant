@@ -1,0 +1,276 @@
+CREATE DATABASE icecreamshop;
+USE icecreamshop;
+
+CREATE TABLE category (
+id INT PRIMARY KEY,
+name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO category (id, name)
+VALUES 
+(1,"cone"),
+(2,"cup"),
+(3,"stick/kulfi"),
+(4,"packet"),
+(5,"others")
+;
+
+SELECT * FROM category;
+
+CREATE TABLE brand (
+id INT PRIMARY KEY,
+name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO brand (id, name)
+VALUES
+(1,"creamery"),
+(2,"havmor"),
+(3,"motherDairy"),
+(4,"vadilal"),
+(5,"frozenFrenzy"),
+(6,"berryBliss")
+;
+
+SELECT * FROM brand;
+
+CREATE TABLE iceCream (
+    id INT NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    brandid INT NOT NULL,
+    categoryid INT NOT NULL,
+    price INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (brandid) REFERENCES brand (id),
+    FOREIGN KEY (categoryid) REFERENCES category (id)
+);
+
+
+INSERT INTO icecream (id, name,brandid, categoryid, price)
+VALUES
+(1,"strawberry cone",1,1,30),
+(2,"vanila cone",1,1,30),
+(3,"chocolate cone",1,1,30),
+(4,"strawberry cup",1,2,15),
+(5,"vanila cup",1,2,15),
+(6,"chocolate cup",1,2,15),
+(7,"strawberry stick",1,3,25),
+(8,"vanila stick",1,3,25),
+(9,"chocolate stick",1,3,25),
+(10,"blueberry stick",1,3,25),
+(11,"vanila pack",1,4,125),
+(12,"chocolate pack",1,4,125),
+(13,"strawberry pack",1,4,125),
+(14,"sticks",1,5,20),
+(15,"juice",1,5,35),
+(16,"Choco Block",2,1,70),
+(17,"Turbo (Chocolate Disc)",2,1,50),
+(18,"Dark Chocolate",2,1,40),
+(19,"Choco Brownle",2,1,40),
+(20,"Kesar Pistachio",2,1,40),
+(21,"Kulfi Cone",2,1,35),
+(22,"Cookies N Cream",2,1,35),
+(23,"Mango",2,1,30),
+(24,"Butter Scotch",2,1,30),
+(25,"Chocolate",2,1,30),
+(26,"Yummy Strawberry",2,1,30),
+(27,"Choco Vanilla",2,1,25),
+(28,"Choco Pops",2,1,20),
+(29,"Havmor",2,1,20),
+(30,"Chic Choc",2,1,20),
+(31,"Ringo Bingo",2,1,15),
+(32,"Havmor Kulfi",2,3,300),
+(33,"Travel",2,3,50),
+(34,"Malai Kulfi (Roll Cut)",2,3,40),
+(35,"Dryfruit Rabdi",2,3,30),
+(36,"Chowpats",2,3,30),
+(37,"Malal Kulfi (SugarFree)",2,3,30),
+(38,"Raj Bhog",2,3,30),
+(39,"Mava Tillewali",2,3,25),
+(40,"Mava Tillewali",2,3,25),
+(41,"Shahi",2,3,20),
+(42,"Bombay",2,3,20),
+(43,"Chocolate Chips",2,2,50),
+(44,"American Nuts",2,2,40),
+(45,"Premium Butter Scotch",2,2,35),
+(46,"Vanilla",2,2,25),
+(47,"Choco Brownie Sundae",2,2,35),
+(48,"Choco Sundae",2,2,25),
+(49,"Strawberry Sundae",2,2,25),
+(50,"Mango Sundae",2,2,25),
+(51,"Kesar Pista",2,2,35),
+(52,"Raj Bhog",2,2,35),
+(53,"Kaju Draksh",2,2,30),
+(54,"Butter Scotch",2,2,25),
+(55,"Strawberr",2,2,15),
+(56,"Tutti Frutti",2,2,15),
+(57,"Vanilla",2,2,15),
+(58,"chocolateLite",2,4,495),
+(59,"shotties",2,4,81),
+(60,"almond carniva",2,4,315),
+(61,"biscute",2,5,55),
+(62,"roll",2,5,45),
+(63,"choco mocha",3,1,40),
+(64,"butterscoch",3,1,30),
+(65,"choco balst",3,1,30),
+(66,"choco vanila",3,1,25),
+(67,"mini choco",3,1,15),
+(68,"mega bar",3,3,30),
+(69,"choco almond crush",3,3,30),
+(70,"choco treat",3,3,25),
+(71,"pure milk",3,2,35),
+(72,"dark chocolate",3,2,40),
+(73,"honey caramal",3,2,30),
+(74,"strawberry",3,2,25),
+(75,"chocolate cheese",3,4,550),
+(76,"vanila white milk",3,4,350),
+(77,"honey",3,4,450),
+(78,"biscute sandwich",3,5,45),
+(79,"crispy roll",3,5,60),
+(80,"lingo belgian chocolate",4,1,50),
+(81,"cookie disc",4,1,55),
+(82,"dark chocolate",4,1,50),
+(83,"nut",4,1,60),
+(84,"prurple chocolate",4,2,35),
+(85,"blueberry",4,2,30),
+(86,"dark pineapple",4,2,25),
+(87,"chocobar",4,3,25),
+(88,"kulfi",4,3,35)
+;
+
+SELECT * FROM icecream;
+
+CREATE TABLE customer (
+id INT PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+phoneNumber INT NOT NULL,
+nearorfar VARCHAR(50) NOT NULL
+);
+
+-- data has been imported through "table data import wizard"
+
+SELECT * FROM customer;
+
+CREATE TABLE orders (
+    id INT NOT NULL,
+    customerid INT NOT NULL,
+    orderDate DATE NOT NULL,
+    weekday INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (customerid) REFERENCES customer (id)
+);
+
+-- data has been imported through "table data import wizard"
+SELECT * FROM orders;
+
+CREATE TABLE ordersdetails (
+    id INT NOT NULL,
+    orderid INT NOT NULL,
+    icecreamid INT NOT NULL,
+    quantity INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (orderid) REFERENCES orders (id),
+    FOREIGN KEY (icecreamid) REFERENCES icecream (id)
+);
+
+-- data has been imported through "table data import wizard"
+SELECT * FROM ordersdetails;
+
+--
+--
+-- 1. queries
+SELECT * FROM category;
+SELECT * FROM brand;
+SELECT * FROM icecream;
+SELECT * FROM customer;
+SELECT * FROM orders;
+SELECT * FROM ordersdetails;
+
+-- 2. total number of orders throughout the month
+SELECT SUM(quantity) AS totalQuantity FROM ordersdetails;
+
+-- 3. total sales throughout the month
+SELECT SUM(od.quantity) AS totalsales
+FROM ordersdetails od
+JOIN icecream ic ON ic.id = od.icecreamid;
+
+-- 4
+SELECT b.name, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN icecream ic ON ic.id = od.icecreamid
+JOIN brand b ON b.id = ic.brandid
+GROUP BY b.id;
+
+-- 6.
+SELECT c.name, SUM(od.quantity) AS totalQuantity 
+FROM ordersdetails od
+JOIN icecream ic ON ic.id = od.icecreamid
+JOIN category c ON c.id = ic.categoryid
+GROUP BY c.id;
+
+-- 7.
+SELECT c.name, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN icecream ic ON ic.id = od.icecreamid
+JOIN category c ON c.id = ic.categoryid
+GROUP BY c.id;
+
+-- 8. 
+SELECT c.nearorfar, SUM(od.quantity) AS Totalquantity
+FROM ordersdetails od
+JOIN orders o ON o.id = od.orderid
+JOIN customer c ON c.id = o.customerid
+GROUP BY nearorfar;
+
+-- 9.
+SELECT c.nearorfar, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN orders o ON o.id = od.orderid
+JOIN customer c ON c.id = o.customerid
+JOIN icecream ic ON ic.id = od.icecreamid
+GROUP BY c.nearorfar;
+
+SELECT b.name, c.name, SUM(od.quantity) AS totalorders, SUM(od.quantity*ic.price) AS Sales
+FROM brand b
+JOIN icecream ic ON ic.brandid = b.id
+JOIN category c ON c.id = ic.categoryid
+JOIN ordersdetails od ON od.icecreamid = ic.id
+WHERE b.name = "havmor"
+GROUP BY c.name;
+
+SELECT ic.name, SUM(ic.price*od.quantity) AS sales
+FROM icecream ic
+JOIN ordersdetails od ON od.icecreamid = ic.id
+GROUP BY ic.name
+ORDER BY sales DESC;
+
+SELECT b.name, ic.name, SUM(od.quantity) AS sales
+FROM icecream ic
+JOIN ordersdetails od ON od.icecreamid = ic.id
+JOIN brand b ON b.id = ic.brandid
+GROUP BY ic.name
+ORDER BY sales DESC;
+
+SELECT o.weekday, SUM(od.quantity) AS totalquantity, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN orders o ON od.orderid = o.id
+JOIN icecream ic ON ic.id = od.icecreamid
+GROUP BY weekday
+ORDER BY totalsales DESC;
+
+SELECT cm.id, SUM(od.quantity) AS totalquantity, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN orders o ON od.orderid = o.id
+JOIN icecream ic ON ic.id = od.icecreamid
+JOIN customer cm ON cm.id = o.customerid
+GROUP BY cm.id
+ORDER BY totalsales DESC;
+
+SELECT o.orderdate, SUM(od.quantity*ic.price) AS totalsales
+FROM ordersdetails od
+JOIN orders o ON o.id = od.orderid
+JOIN icecream ic ON ic.id = od.icecreamid 
+WHERE o.orderdate BETWEEN '2023-08-01' 
+AND '2023-08-10'
+GROUP BY orderdate
+ORDER BY orderdate;
