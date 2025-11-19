@@ -1,0 +1,23 @@
+drop database if exists dql;
+create database dql;
+use dql;
+create table student_demo(
+roll int, subject varchar(20),addr varchar(20),marks int);
+insert into student_demo values
+(1,"Python","Pune",56),
+(2,"Java","Mumbai",95),
+(3,"HTML","Nasik",85),
+(4,"C","Pune",56),
+(5,"Python","Nasik",50),
+(6,"Django","Andheri",99),
+(7,"JavaScript","Banglore",85),
+(8,null,"Pune",null);
+select * from student_demo;
+insert into student_demo(roll,addr) values(9,"Delhi"),
+(10,"Mumbai");
+select * from student_demo;
+insert into student_demo values
+(11,"Django","Andheri",78),
+(12,"JavaScript","Banglore",45),
+(13,"Python","Andheri",16),
+(14,"Python","Pune",96);

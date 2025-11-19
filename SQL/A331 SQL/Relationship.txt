@@ -1,0 +1,108 @@
+Drop database if exists relationship;
+Create database relationship;
+Use relationship;
+#-----------------------------------
+-- Cars table first
+CREATE TABLE Cars (
+    car_id INT PRIMARY KEY,
+    car_model VARCHAR(100),
+    car_registration_number VARCHAR(50)
+);
+
+-- Employees table
+CREATE TABLE Employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(100),
+    car_id INT UNIQUE, -- Each employee gets exactly one car
+    FOREIGN KEY (car_id) REFERENCES Cars(car_id)
+);
+-- Insert Cars
+INSERT INTO Cars VALUES 
+(1, 'Toyota Corolla', 'MH12AB1234'),
+(2, 'Honda City', 'MH14XY5678'),
+(3, 'Hyundai i20', 'MH01ZZ4321');
+
+-- Insert Employees (each has one unique car)
+INSERT INTO Employees VALUES
+(101, 'Amit Sharma', 1),
+(102, 'Riya Mehta', 2),
+(103, 'Rahul Verma', 3);
+
+/*
+SELECT e.employee_id, e.employee_name, c.car_model, c.car_registration_number
+FROM Employees e
+JOIN Cars c ON e.car_id = c.car_id;
+*/
+#------------------------------------------------------------------------
+# 1 to many
+CREATE TABLE Authors (
+    author_id INT PRIMARY KEY,
+    author_name VARCHAR(100)
+);
+
+CREATE TABLE Books (
+    book_id INT PRIMARY KEY,
+    book_title VARCHAR(200),
+    author_id INT,
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+);
+-- Insert Authors
+INSERT INTO Authors VALUES
+(1, 'J.K. Rowling'),
+(2, 'Ruskin Bond');
+
+-- Insert Books
+INSERT INTO Books VALUES
+(101, 'Harry Potter and the Sorcerer''s Stone', 1),
+(102, 'Harry Potter and the Chamber of Secrets', 1),
+(103, 'The Room on the Roof', 2);
+
+/*
+SELECT a.author_name, b.book_title
+FROM Authors a
+JOIN Books b ON a.author_id = b.author_id;
+*/
+#----------------------------------------------------------------------------------
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(100)
+);
+
+CREATE TABLE Courses (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(100)
+);
+
+-- Junction table
+CREATE TABLE Enrollments (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
+-- Students
+INSERT INTO Students VALUES
+(1, 'Amit'),
+(2, 'Riya'),
+(3, 'Rahul');
+
+-- Courses
+INSERT INTO Courses VALUES
+(101, 'Mathematics'),
+(102, 'Science');
+
+-- Enrollments (Many-to-Many)
+INSERT INTO Enrollments VALUES
+(1, 101), -- Amit → Mathematics
+(1, 102), -- Amit → Science
+(2, 101), -- Riya → Mathematics
+(3, 102); -- Rahul → Science
+
+/*
+SELECT s.student_name, c.course_name
+FROM Enrollments e
+JOIN Students s ON e.student_id = s.student_id
+JOIN Courses c ON e.course_id = c.course_id;
+*/
