@@ -1,0 +1,340 @@
+1. Measure of Central Tendency
+Central tendency refers to the central or typical value in a dataset. It provides a summary of the dataset with a single value.
+
+Mean: The arithmetic average of the data.
+Median: The middle value when data is ordered.
+Mode: The most frequently occurring value in the dataset.
+
+2. Measure of Dispersion
+Dispersion measures how spread out the data values are. It gives an idea of the variability or diversity in the dataset.
+
+Range: Difference between the maximum and minimum values.
+Variance: Average of the squared differences from the mean.
+Standard Deviation: Square root of the variance.
+Interquartile Range (IQR): Difference between the 75th percentile (Q3) and 25th percentile (Q1).
+
+3. Measure of Association
+Measures of association describe the strength and direction of relationships between two variables.
+
+Correlation Coefficient (r): Measures the linear relationship between two variables. Ranges from 
+−1 to +1.
+Covariance: Measures the direction of the relationship between two variables (positive, negative, or no relationship).
+Regression: Quantifies the relationship between a dependent variable and one or more independent variables.
+
+4. Skewness
+Skewness measures the asymmetry of the data distribution.
+
+Positive Skew (Right-Skewed): Tail is longer on the right. Mean > Median > Mode.
+Negative Skew (Left-Skewed): Tail is longer on the left. Mean < Median < Mode.
+Symmetric: No skew, often resembles a normal distribution. Mean = Median = Mode.
+#---------------------------------------------------
+1. The Central Limit Theorem (CLT)
+What it States: The CLT asserts that, regardless of the population distribution, 
+the sampling distribution of the sample mean approaches a normal distribution as the sample size increases.
+Why It Matters:
+Enables the use of normal distribution to approximate sampling distributions.
+Forms the foundation for many inferential statistics techniques like hypothesis testing and confidence intervals.
+
+#---------------------------------------------------
+5. Probability Basics
+Probability quantifies the likelihood of an event occurring, ranging from 
+0 (impossible) to 1 (certain).
+Event: A specific outcome or set of outcomes.
+Sample Space: The set of all possible outcomes.
+Probability Formula:
+P(E)= Number of favorable outcomes/Total number of outcomes
+
+Q.> A bag contains 3 red balls, 4 green balls, and 5 blue balls. What is the probability of randomly selecting:
+
+(a) A red ball?
+(b) A green ball?
+(c) A blue ball?
+
+Solution-- A bag contains 3 red balls, 4 green balls, and 5 blue balls. Total balls =3+4+5=12.
+
+(a) Probability of selecting a red ball:
+𝑃(Red)=Number of red balls/Total balls=3/12=0.25
+
+(b) Probability of selecting a green ball:
+𝑃(Green)=4/12=0.333
+
+(c) Probability of selecting a blue ball:
+𝑃(Blue)=5/12=0.417
+
+#-----------------------------------------------------
+There are variety of Distributions,they help us make probabilistic predictions and informed decisions under uncertainty.
+
+Understanding Variability: They explain how data is spread and help compute probabilities for specific outcomes.
+
+Foundation for Statistical Tests: Many statistical methods, including hypothesis testing and regression, 
+rely on assumptions about underlying distributions.
+​
+#-----------------------------------------------------
+6. Uniform Distribution
+In a uniform distribution, all outcomes are equally likely.
+
+Discrete Uniform Distribution: A finite number of equally likely outcomes.
+Continuous Uniform Distribution: Every value in an interval is equally likely.
+Example: Rolling a fair six-sided die.
+
+Q.> A spinner is divided into 6 equal sections numbered from 1 to 6. If the spinner is spun once, what is the probability of:
+
+(a) Landing on 4?
+(b) Landing on an odd number?
+
+#--------------------------------------------------------
+7. Binomial Distribution
+A binomial distribution describes the number of successes in a fixed number of independent trials, 
+where each trial has two possible outcomes (success or failure).
+
+Key Parameters:
+n: Number of trials.
+p: Probability of success.
+q=1−p: Probability of failure.
+Probability Formula:
+
+P(X=k)=nCk*p^k*(1-p)^(n-k)
+
+k is the number of successes.
+
+Q.>A coin is tossed 5 times. What is the probability of getting exactly 3 heads if the probability of getting heads in each toss is 
+p=0.5?
+A coin is tossed 5 times (𝑛=5,𝑝=0.5). Probability of exactly 3 heads:
+
+P(X=3)=( 5C3)(0.5)^3*(1−0.5)^2 = 5!/(3!*(5-3)!)*(1/2)^3*(1/2)^2 = 10*0.03125 = 0.3125
+ 
+#---------------------------------------------------------
+8. Standard Normal Distribution
+The standard normal distribution is a normal distribution with:
+
+Mean (μ) = 0,
+Standard Deviation (σ) = 1.
+It is a symmetric, bell-shaped curve, and probabilities are calculated using a Z-table. The formula for the 
+Z-score is:
+Z= X−μ/σ
+​
+This converts raw scores into standardized values for comparison.
+
+Imagine that Jeremy took part in an examinaƟon. The test is having a
+mean score of 160, and it has a standard deviaƟon of 15. 
+If Jeremy's zscore is 1.20, what would be his score on the test? 
+
+X=μ+Z⋅σ
+X=160+(1.20⋅15)
+
+X=160+18
+X=178
+Jeremy's Score:
+Jeremy scored 178 on the test.
+----
+Central Limit Theorem
+It states that when plotting a sampling distribution of means, 
+the mean of sample means will be equal to the population mean.
+And the sampling distribution is equal to  normal distribution 
+with variance equal to σ/√n where
+σ is the std dev of population and n is the sample size.
+
+Jeremy scored 178 on the test is my assunption or hypothesis.
+ I can be right or wrong. 
+Term hypothesis forms the basis for testing claims about the data.
+Hypothesis testing is the process of making decisions or 
+inferences about a population based on sample data. 
+
+---
+Sample --
+1. Sampling Techniques
+Sampling is the process of selecting a subset of individuals from a population to estimate characteristics of the whole population.
+
+**Random Sampling
+Definition: Every individual in the population has an equal chance of being selected.
+Example: Selecting 50 students at random from a college of 5000 students by assigning random numbers.
+Advantage: Minimizes bias and ensures each sample is representative of the population.
+
+**Stratified Sampling
+Definition: The population is divided into subgroups (strata) based on shared characteristics, 
+and random samples are taken from each stratum.
+Example: A company wants to survey employees across departments. The workforce is divided into strata (e.g., IT, HR, Finance), 
+and a random sample is selected from each department.
+Advantage: Ensures representation of all subgroups, especially when subgroups differ significantly.
+----
+Hypothesis testing is a statistical method to make decisions about a
+ population based on sample data.
+
+Steps in Hypothesis Testing
+Define Hypotheses:
+Null Hypothesis (𝐻0): No effect or difference.
+ Example: "The mean height of adults is 170 cm."
+Alternative Hypothesis (Ha): Effect or difference exists. 
+Example: "The mean height is not 170 cm."
+Select Significance Level (α): Commonly α=0.05.
+The significance level is a measure used in statistical hypothesis testing to 
+determine whether the results are statistically significant. 
+It represents the threshold for rejecting the null hypothesis
+Choose a Test: Depends on data type and distribution
+ (e.g., Z-test, t-test, chi-square test).
+Calculate Test Statistic: Compare the sample data to H0.
+Make a Decision:
+Reject H0 - if the p-value<α.
+Fail to reject H0 - if the p-value>α.
+
+3. Central Limit Theorem (CLT)
+The CLT states that the sampling distribution of the sample mean approaches a normal distribution 
+as the sample size increases, regardless of the population's distribution.
+
+Key Points:
+The mean of the sampling distribution equals the population mean (𝜇).
+The standard deviation of the sampling distribution (𝜎𝑥ˉ) is:
+𝑥ˉ=σ/sqrt(n)
+Works best for sample sizes 𝑛>30
+
+Example:
+If the population mean income is $50,000 with a standard deviation of 
+$10,000, and you take a sample of 100 people:
+Sampling distribution mean = $50,000.
+Sampling distribution standard deviation:
+𝜎𝑥ˉ=10,000/100 =1,000
+
+4. Estimating Population Parameters
+This involves using sample data to estimate population characteristics like mean (μ).
+
+Point Estimation
+A single value used to estimate a parameter.
+Example: The sample mean (𝑥ˉ) estimates the population mean (μ).
+
+Interval Estimation
+Provides a range (confidence interval) within which the parameter is likely to lie.
+Formula for confidence interval (mean):
+CI=𝑥±𝑍⋅(𝜎/sqrt(𝑛))
+
+Now,it is important to know where the population mean lies with respect to a particular sample mean and how confident can we be about it.
+This brings us to our next topic – Confidence Interval.
+
+Confidence Interval
+The confidence interval is a type of interval estimate from the sampling distribution which gives a range of values in which the
+population statistic may lie.
+
+So our final formula is like-
+CI=sample mean+-z*(sampleStddev/sqrt(sample size))
+
+A z critical value is the number of standard deviations from the 
+mean in a standard normal distribution, used in hypothesis testing to 
+determine if a sample result is statistically significant. 
+It serves as a threshold, and if the calculated test statistic is 
+farther from the mean than the critical value, the result is considered 
+statistically significant. For example, 
+common z critical values include (1.96) for a 95% confidence level 
+and (1.645) for a 90% confidence level
+
+
+How z critical values are used Significance testing: 
+Z critical values are compared against a test statistic (like a z-score) 
+to decide whether to reject or fail to reject the null hypothesis.
+Hypothesis tests: For a two-tailed test with a 95% confidence level 
+(where (alpha =0.05)), the critical values are (pm 1.96). 
+For a one-tailed test, the critical value would be (1.645) (right-tailed) or 
+(-1.645) (left-tailed) for a 95% confidence level.
+Confidence intervals: They define the boundaries of a confidence interval. 
+For instance, a 95% confidence interval is constructed by adding and subtracting 
+(1.96) standard errors from the sample mean
+
+Z: Critical value based on confidence level (e.g., 1.96 for 95%).
+Example:
+Sample mean weight = 70 kg, standard deviation = 5 kg, sample size = 50.
+95% confidence interval:
+CI=70±1.96⋅(5/sqrt(50)) =70±1.38=(68.62,71.38)
+#------------------
+Z-test
+A Z-test is used to determine whether there is a significant difference 
+between the sample mean and the population mean,
+or between two sample means when the sample size is large (n ≥ 30), 
+and the population standard deviation is known.
+Types of Z-tests:
+1.	One-sample Z-test: Compares the sample mean to a known population mean.
+2.	Two-sample Z-test: Compares the means of two independent samples.
+3.	Z-test for proportions: Used to compare observed proportions to 
+expected proportions.
+#------------------
+T-test
+A T-test is used to compare the means of two groups or a sample mean to a population mean when the population standard deviation is unknown, 
+and the sample size is small (typically n < 30). It assumes the data follows a normal distribution.
+Types of T-tests:
+1.	One-sample T-test: Compares the sample mean to a known value (e.g., population mean).
+2.	Independent two-sample T-test: Compares the means of two independent groups.
+3.	Paired sample T-test: Compares the means of two related groups (e.g., before and after treatment).
+#-----------------------
+Decision Rule:
+
+Accept (fail to reject) 
+𝐻0 if the calculated z-score lies within the range of the critical values
+ (i.e., does not fall into the rejection region).
+Reject H0 if the calculated z-score falls outside the critical value range 
+(i.e., in the rejection region).
+
+#------------------
+5. P-values, Type 1 and Type 2 Errors
+P-values
+Definition: Probability of observing the sample results, or 
+more extreme, assuming 𝐻0 is true.
+Interpretation: P≤α: Reject (significant evidence against H0).
+                P>α: Fail to reject H0
+​
+ .
+Type 1 Error(α) : Rejecting H0 when it is actually true.
+Example: Concluding a drug is effective when it’s not.
+
+Type 2 Error (β) : Failing to reject H0 when it is actually false.
+Example: Concluding a drug is not effective when it actually is.
+
+Example:
+Significance level (α=0.05), p-value = 0.03:
+Since 0.03<0.05, reject H0
+or p = 0.08 when (α=0.05). since, 0.08>0.05 -- accept H0
+​
+Type 1 Error: False rejection of H0 with 5% probability.
+Type 2 Error: False acceptance of H0.
+
+----
+A Telecom service provider claims that individual customers pay on an
+average 400 Rs. per month with standard deviaƟon of 25 rs. A random
+sample of 50 customers bills during a given month is taken with a mean
+of 250 and standard deviaƟon of 15. What to say with respect to the
+claim made by the service provider? 
+
+
+1. Define Hypotheses
+Null Hypothesis (H0): The average bill is μ=400 Rs. (claim made by the provider).
+Alternative Hypothesis (𝐻𝑎): The average bill is 𝜇≠400Rs.
+ (the sample indicates a significant deviation from the claim).
+This is a two-tailed test since we are checking for deviation in either direction.
+
+2. Test Statistic Formula
+We calculate the test statistic (Z) for the sample mean:
+𝑍=(𝑋ˉ−𝜇)/𝜎/sqrt(𝑛)
+Where:
+𝑋ˉ=250 (sample mean),
+μ=400 (population mean, claimed value),
+σ=25 (population standard deviation),
+n=50 (sample size).
+
+3. Calculate the Test Statistic
+Substitute the values:
+
+𝑍=(250−400)/25/sqrt(50)≈−42.43
+
+4. Interpret the Results
+A Z-score of −42.43 is an extremely large magnitude, far beyond any typical critical value (e.g., 
+Z = ±1.96 for a 95% confidence level). This indicates overwhelming evidence against the null hypothesis.
+
+5. Conclusion
+In this case, the null hypothesis (H0) is rejected.
+The sample data strongly contradicts the telecom provider's claim that the average bill is 400 Rs. 
+The mean bill of 250 Rs in the sample suggests that their claim is not accurate.
+
+hh#-------------------------------
+
+#-----------------
+
+
+
+
+
