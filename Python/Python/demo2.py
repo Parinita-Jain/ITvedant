@@ -1,95 +1,67 @@
 '''
-# Float datatype
-a=2.3
-b=4.6
-print(a**b) # 2.3 raise to power 4.6 -- float result
-print(a%b) # float only remainder
-print(a//b) # float value
-'''
-#--------------- string datatype
-'''
-a="Hello"
-b="World"
+a=int(input("Enter a number : "))
+print(f"The number {a} after dividing by 2 : {a//2}")
 print(type(a))
-print(a+b) # concatenation
-#print(a-b) # error
-#print(a*b) # error
-print(a*5)
-#print(a/5) #error
 '''
-#------------------- logical operators
-# and or not
-# ------------------ relational operator
-# > ,<, >=,<=, ==, !=
+#------------------------
 '''
-a=20
-b=30
-print(a==b)
-print(a!=b)
-print(a>=b)
-print(a<=b)
-print(a<b)
-print(a>b)
-'''
-#-----------------------------
-'''
-profit=float(input("Enter profit value : "))
-if profit<0:
-    print("Inside If. Part of if")
-    print("Alert : Profit less than 0")
-print("Outside if. Not part of if")
-'''
-#-------------------
-'''
-profit=float(input("Enter profit value : "))
-if profit<0:
-    print("Inside If. Part of if")
-    print("Alert : Profit less than 0")
-elif profit==0:
-    print("Inside elif")
-    print("Attention : Profit is 0")    
-else:
-    print("Inside else.")
-    print("Great ! Profit is +ve")
-print("Common statement")
-'''
-#----------------------------------
-'''
-n=int(input("Enter a value : "))
-if n%2==0:
-    print("Even")
-else:
-    print("Odd")
+# Addition of 2 numbers
 
+n1=float(input("Enter number : "))
+n2=float(input("Enter another number : "))
+#s=n1+n2
+print(f"The addition of numbers is : {n1+n2}")
 '''
-#--------------
+#---------------
 '''
-m=int(input("Enter a value : "))
-if m>=75 and m<=100:
-    print("Grade A")
-elif m>=60 and m<=74:
-    print("Grade B")
-elif m>=35 and m<=59:
-    print("Grade C")
-elif m>=0 and m<=34:
-    print("Fail")
+# ci calculation
+p=float(input("Enter principal : "))
+r=float(input("Enter rate : "))
+t=float(input("Enter time : "))
+
+ci= p*(1+(r/100))**t
+print(f"The ci of {p},{r} and {t}: {ci}")
+'''
+#----------------------
+'''
+# + - * / // ** => numbers
+# conditional operators which helps in checking whether
+# a condition is satisfied or not. => true/false
+# >,<,==,<=,>=
+a=12
+b=15
+print(f"{a} > {b} : {a>b}")
+print(f"{a} < {b} : {a<b}")
+print(f"{a} == {b} : {a==b}")
+'''
+#-------------------------
+'''
+#to- check if number is even or odd
+a=int(input("Enter a number : "))
+if (a%2==0) and (a>70):
+    print(f"{a} is an even number and > 70")
+elif (a%2==1) and (a>70):
+    print(f"{a} is an odd number and > 70")
+elif (a%2==1) and (a<=70):
+    print(f"{a} is an odd number and <= 70")
 else:
-    print("Enter valid marks")
+    print(f"{a} is an even number and <= 70")
 '''
-#---------------------
-a=input("Enter any alphabet : ")
-if a=="a" or a=="e" or a=="i" or a=="o" or a=="u":
+#-----------------------
+'''
+v=input("Enter letter : ")
+if v=="a" or v=="e" or v=="i" or v=="o" or v=="u":
     print("Vowel")
 else:
-    print("Consonant")
-
-
-
-
-
-
-
-   
+    print("consonant")
+    
+'''
+#--------------------
+v=input("Enter letter : ")
+if v in ("a","e","i","o","u"):
+    print("Vowel")
+else:
+    print("consonant")
 
 
 
